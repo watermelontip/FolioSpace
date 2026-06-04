@@ -208,12 +208,23 @@ const ProjectCard = memo(({ project }: { project: Project }) => {
       <div
         className={`project-preview cursor-target ${loading ? 'animate' : ''}`}
       >
-        <img
-          className="project-image"
-          src={project.preview}
-          alt={project.title}
-          loading="lazy"
-        />
+        {project.preview.endsWith('.mp4') ? (
+          <video
+            className="project-image"
+            src={project.preview}
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        ) : (
+          <img
+            className="project-image"
+            src={project.preview}
+            alt={project.title}
+            loading="lazy"
+          />
+        )}
       </div>
     ),
     [project.preview, project.title],

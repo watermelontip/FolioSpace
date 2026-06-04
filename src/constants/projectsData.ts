@@ -1,6 +1,6 @@
-import netToolboxPreview from '../assets/net-toolbox.png';
-import kawaiiThemePreview from '../assets/kawaii-theme.png';
-import toolsPortalPreview from '../assets/tools-portal.png';
+import netToolboxPreview from '../assets/net-toolbox.mp4';
+import kawaiiThemePreview from '../assets/kawaii-theme.mp4';
+import toolsPortalPreview from '../assets/tools-portal.mp4';
 import { Project } from '../types/project';
 import { SLIDE_IDS } from './slideIds';
 
