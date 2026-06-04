@@ -5,8 +5,7 @@ export const USER_CONFIG = {
   NAME: 'Ren Echo',
   JOB_TITLE: 'AI Student & Developer',
   BIO: [
-    '🎓 河南工业大学 · 人工智能专业大学生',
-    '💻 探索 AI、编程和各种有趣的技术领域',
+    '💻 热爱技术，探索 AI、编程和各种有趣的技术领域',
     '✨ Stay curious, keep coding.',
   ],
   CONTACT_LINKS: [
