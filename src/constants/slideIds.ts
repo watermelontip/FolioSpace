@@ -3,6 +3,11 @@ export const SLIDE_IDS = {
   NET_TOOLBOX: 'net-toolbox',
   KAWAII_THEME: 'kawaii-theme',
   TOOLS_PORTAL: 'tools-portal',
+  CODE_FLOWCHART: 'code-flowchart',
+  PARTICLE_LAB: 'particle-lab',
+  ROUGH_CHART: 'rough-chart',
+  TOWER_GAME: 'tower-game',
+  ALGO_VISUALIZER: 'algo-visualizer',
   OVERVIEW: 'overview',
 } as const;
 
