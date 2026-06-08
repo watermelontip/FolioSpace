@@ -229,6 +229,7 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {id:SLIDE_IDS.SHADOW_FORGE,name:'Shadow Forge',title:'Shadow Forge',preview:'',position:{x:3250,y:0,z:0,rotateY:0},description:'CSS 阴影生成器：Box/Text Shadow、多层叠加、8 种预设，完全离线',descriptionEn:'CSS shadow generator: box/text shadow, multi-layer, 8 presets, fully offline',tech:['CSS','Design','Shadow','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/ShadowForge/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/ShadowForge',text:'Github',githubRepo:'watermelontip/ShadowForge'}],layout:'standard'},
 ];
 
 export const mapData = [
@@ -246,5 +247,6 @@ export const mapData = [
   { id: SLIDE_IDS.JSON_LENS, name: 'JsonLens', icon: 'fas fa-search' },
   { id: SLIDE_IDS.MARK_SNAP, name: 'MarkSnap', icon: 'fas fa-camera' },
   { id: SLIDE_IDS.GRADIENT_STUDIO, name: 'Gradient Studio', icon: 'fas fa-palette' },
+  { id: SLIDE_IDS.SHADOW_FORGE, name: 'Shadow Forge', icon: 'fas fa-magic' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];

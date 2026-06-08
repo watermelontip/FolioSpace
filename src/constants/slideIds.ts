@@ -13,6 +13,7 @@ export const SLIDE_IDS = {
   JSON_LENS: 'json-lens',
   MARK_SNAP: 'mark-snap',
   GRADIENT_STUDIO: 'gradient-studio',
+  SHADOW_FORGE: 'shadow-forge',
   OVERVIEW: 'overview',
 } as const;
 
