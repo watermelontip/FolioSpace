@@ -214,6 +214,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.GRADIENT_STUDIO,
+    name: 'Gradient Studio',
+    title: 'Gradient Studio',
+    preview: '',
+    position: { x: 3000, y: 0, z: 0, rotateY: 0 },
+    description: 'CSS 渐变生成器：线性/径向/锥形、16 种预设、一键复制 CSS，完全离线',
+    descriptionEn: 'CSS gradient generator: linear/radial/conic, 16 presets, copy CSS, fully offline',
+    tech: ['CSS', 'Design', 'Gradient', 'Offline'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/GradientStudio/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/GradientStudio', text: 'Github', githubRepo: 'watermelontip/GradientStudio' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData = [
@@ -230,5 +245,6 @@ export const mapData = [
   { id: SLIDE_IDS.DEV_VAULT, name: 'DevVault', icon: 'fas fa-shield-alt' },
   { id: SLIDE_IDS.JSON_LENS, name: 'JsonLens', icon: 'fas fa-search' },
   { id: SLIDE_IDS.MARK_SNAP, name: 'MarkSnap', icon: 'fas fa-camera' },
+  { id: SLIDE_IDS.GRADIENT_STUDIO, name: 'Gradient Studio', icon: 'fas fa-palette' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];

@@ -12,6 +12,7 @@ export const SLIDE_IDS = {
   DEV_VAULT: 'dev-vault',
   JSON_LENS: 'json-lens',
   MARK_SNAP: 'mark-snap',
+  GRADIENT_STUDIO: 'gradient-studio',
   OVERVIEW: 'overview',
 } as const;
 
