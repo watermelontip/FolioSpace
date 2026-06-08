@@ -234,6 +234,7 @@ export const projectsData: Project[] = [
   {id:SLIDE_IDS.QR_FORGE,name:'QR Forge',title:'QR Forge',preview:'',position:{x:3750,y:0,z:0,rotateY:0},description:'二维码生成器：自定义颜色/纠错级别/模块大小，导出 PNG/SVG，完全离线',descriptionEn:'QR code generator: custom colors/EC level/module size, export PNG/SVG, fully offline',tech:['QR','Generator','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/QrForge/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/QrForge',text:'Github',githubRepo:'watermelontip/QrForge'}],layout:'standard'},
   {id:SLIDE_IDS.PALETTE_SNAP,name:'Palette Snap',title:'Palette Snap',preview:'',position:{x:4000,y:0,z:0,rotateY:0},description:'图片取色板：从图片提取色彩方案，可调颜色数量，导出 CSS 变量/Tailwind，图片不离开浏览器',descriptionEn:'Image color palette extractor: extract colors from images, export CSS vars/Tailwind, images never leave browser',tech:['Color','Design','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/PaletteSnap/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/PaletteSnap',text:'Github',githubRepo:'watermelontip/PaletteSnap'}],layout:'standard'},
   {id:SLIDE_IDS.HANDWRITE,name:'Handwrite',title:'Handwrite',preview:'',position:{x:4250,y:0,z:0,rotateY:0},description:'文字转手写体：3 种字体、5 种纸张、5 种笔色，导出 PNG，文字不离开浏览器',descriptionEn:'Text to handwriting: 3 fonts, 5 paper styles, 5 pen colors, export PNG, text never leaves browser',tech:['Text','Handwriting','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/Handwrite/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/Handwrite',text:'Github',githubRepo:'watermelontip/Handwrite'}],layout:'standard'},
+  {id:SLIDE_IDS.FAVICON_FORGE,name:'Favicon Forge',title:'Favicon Forge',preview:'',position:{x:4500,y:0,z:0,rotateY:0},description:'Favicon 生成器：文字/Emoji/形状、多尺寸导出、生成 HTML 标签，完全离线',descriptionEn:'Favicon generator: text/emoji/shapes, multi-size export, HTML tags, fully offline',tech:['Favicon','Generator','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/FaviconForge/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/FaviconForge',text:'Github',githubRepo:'watermelontip/FaviconForge'}],layout:'standard'},
 ];
 
 export const mapData = [
@@ -256,5 +257,6 @@ export const mapData = [
   { id: SLIDE_IDS.QR_FORGE, name: 'QR Forge', icon: 'fas fa-qrcode' },
   { id: SLIDE_IDS.PALETTE_SNAP, name: 'Palette Snap', icon: 'fas fa-eye-dropper' },
   { id: SLIDE_IDS.HANDWRITE, name: 'Handwrite', icon: 'fas fa-pen-fancy' },
+  { id: SLIDE_IDS.FAVICON_FORGE, name: 'Favicon Forge', icon: 'fas fa-icons' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];

@@ -18,6 +18,7 @@ export const SLIDE_IDS = {
   QR_FORGE: 'qr-forge',
   PALETTE_SNAP: 'palette-snap',
   HANDWRITE: 'handwrite',
+  FAVICON_FORGE: 'favicon-forge',
   OVERVIEW: 'overview',
 } as const;
 
