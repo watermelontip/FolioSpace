@@ -21,6 +21,7 @@ export const SLIDE_IDS = {
   FAVICON_FORGE: 'favicon-forge',
   FOCUS_TIMER: 'focus-timer',
   TEXT_DIFF: 'text-diff',
+  REGEX_PAL: 'regex-pal',
   OVERVIEW: 'overview',
 } as const;
 
