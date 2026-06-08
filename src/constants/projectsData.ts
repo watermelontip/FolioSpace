@@ -197,6 +197,23 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.MARK_SNAP,
+    name: 'MarkSnap',
+    title: 'MarkSnap',
+    preview: '',
+    position: { x: 2750, y: 0, z: 0, rotateY: 0 },
+    description:
+      'Markdown 转图片工具：7 种主题、导出 PNG、代码高亮，单文件 HTML，完全离线',
+    descriptionEn:
+      'Markdown to image tool: 7 themes, PNG export, code highlighting, single-file HTML, fully offline',
+    tech: ['Markdown', 'Image', 'Privacy', 'Offline'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/MarkSnap/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/MarkSnap', text: 'Github', githubRepo: 'watermelontip/MarkSnap' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData = [
@@ -212,5 +229,6 @@ export const mapData = [
   { id: SLIDE_IDS.AI_PRICING_RADAR, name: 'AI Pricing Radar', icon: 'fas fa-chart-line' },
   { id: SLIDE_IDS.DEV_VAULT, name: 'DevVault', icon: 'fas fa-shield-alt' },
   { id: SLIDE_IDS.JSON_LENS, name: 'JsonLens', icon: 'fas fa-search' },
+  { id: SLIDE_IDS.MARK_SNAP, name: 'MarkSnap', icon: 'fas fa-camera' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];

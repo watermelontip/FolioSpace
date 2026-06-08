@@ -11,6 +11,7 @@ export const SLIDE_IDS = {
   AI_PRICING_RADAR: 'ai-pricing-radar',
   DEV_VAULT: 'dev-vault',
   JSON_LENS: 'json-lens',
+  MARK_SNAP: 'mark-snap',
   OVERVIEW: 'overview',
 } as const;
 
