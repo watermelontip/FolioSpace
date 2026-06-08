@@ -20,6 +20,7 @@ export const SLIDE_IDS = {
   HANDWRITE: 'handwrite',
   FAVICON_FORGE: 'favicon-forge',
   FOCUS_TIMER: 'focus-timer',
+  TEXT_DIFF: 'text-diff',
   OVERVIEW: 'overview',
 } as const;
 
