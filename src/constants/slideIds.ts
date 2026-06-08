@@ -14,6 +14,7 @@ export const SLIDE_IDS = {
   MARK_SNAP: 'mark-snap',
   GRADIENT_STUDIO: 'gradient-studio',
   SHADOW_FORGE: 'shadow-forge',
+  PDF_LOCAL: 'pdf-local',
   OVERVIEW: 'overview',
 } as const;
 
