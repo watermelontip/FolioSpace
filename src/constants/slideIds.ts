@@ -10,6 +10,7 @@ export const SLIDE_IDS = {
   ALGO_VISUALIZER: 'algo-visualizer',
   AI_PRICING_RADAR: 'ai-pricing-radar',
   DEV_VAULT: 'dev-vault',
+  JSON_LENS: 'json-lens',
   OVERVIEW: 'overview',
 } as const;
 

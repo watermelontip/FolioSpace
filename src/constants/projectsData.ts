@@ -180,6 +180,23 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.JSON_LENS,
+    name: 'JsonLens',
+    title: 'JsonLens',
+    preview: '',
+    position: { x: 2500, y: 0, z: 0, rotateY: 0 },
+    description:
+      'JSON 可视化浏览器：树形渲染/搜索高亮/统计面板，支持大文件，单文件 HTML，完全离线',
+    descriptionEn:
+      'JSON visual browser: collapsible tree, search highlighting, stats panel, large file support, single-file HTML, fully offline',
+    tech: ['JSON', 'Visualization', 'Privacy', 'Offline'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/JsonLens/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/JsonLens', text: 'Github', githubRepo: 'watermelontip/JsonLens' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData = [
@@ -194,5 +211,6 @@ export const mapData = [
   { id: SLIDE_IDS.TOOLS_PORTAL, name: 'Tools Portal', icon: 'fas fa-tools' },
   { id: SLIDE_IDS.AI_PRICING_RADAR, name: 'AI Pricing Radar', icon: 'fas fa-chart-line' },
   { id: SLIDE_IDS.DEV_VAULT, name: 'DevVault', icon: 'fas fa-shield-alt' },
+  { id: SLIDE_IDS.JSON_LENS, name: 'JsonLens', icon: 'fas fa-search' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];
