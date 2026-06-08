@@ -238,6 +238,7 @@ export const projectsData: Project[] = [
   {id:SLIDE_IDS.FOCUS_TIMER,name:'Focus Timer',title:'Focus Timer',preview:'',position:{x:4750,y:0,z:0,rotateY:0},description:'番茄钟计时器：工作/短休/长休循环、统计面板、自定义时长、浏览器通知，完全离线',descriptionEn:'Pomodoro timer: work/break cycles, stats panel, custom durations, browser notifications, fully offline',tech:['Productivity','Timer','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/FocusTimer/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/FocusTimer',text:'Github',githubRepo:'watermelontip/FocusTimer'}],layout:'standard'},
   {id:SLIDE_IDS.TEXT_DIFF,name:'TextDiff',title:'TextDiff',preview:'',position:{x:5000,y:0,z:0,rotateY:0},description:'文本对比工具：并排/统一 diff、行号、词级高亮、忽略空白/大小写，完全离线',descriptionEn:'Text diff tool: split/unified view, line numbers, word-level highlighting, ignore whitespace/case, fully offline',tech:['Diff','Text','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/TextDiff/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/TextDiff',text:'Github',githubRepo:'watermelontip/TextDiff'}],layout:'standard'},
   {id:SLIDE_IDS.REGEX_PAL,name:'RegexPal',title:'RegexPal',preview:'',position:{x:5250,y:0,z:0,rotateY:0},description:'正则表达式测试工具：实时匹配高亮、捕获组、替换测试、常用正则速查，完全离线',descriptionEn:'Regex tester: real-time matching, capture groups, replace test, common regex cheatsheet, fully offline',tech:['Regex','DevTools','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/RegexPal/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/RegexPal',text:'Github',githubRepo:'watermelontip/RegexPal'}],layout:'standard'},
+  {id:SLIDE_IDS.COLOR_FORGE,name:'ColorForge',title:'ColorForge',preview:'',position:{x:5500,y:0,z:0,rotateY:0},description:'颜色转换与调色板：HEX/RGB/HSL/CMYK互转、色彩和谐、WCAG对比度、渐变预览，完全离线',descriptionEn:'Color converter & palette: HEX/RGB/HSL/CMYK, harmonies, WCAG contrast check, gradient preview, fully offline',tech:['Color','Design','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/ColorForge/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/ColorForge',text:'Github',githubRepo:'watermelontip/ColorForge'}],layout:'standard'},
 ];
 
 export const mapData = [
@@ -264,5 +265,6 @@ export const mapData = [
   { id: SLIDE_IDS.FOCUS_TIMER, name: 'Focus Timer', icon: 'fas fa-clock' },
   { id: SLIDE_IDS.TEXT_DIFF, name: 'TextDiff', icon: 'fas fa-code-branch' },
   { id: SLIDE_IDS.REGEX_PAL, name: 'RegexPal', icon: 'fas fa-terminal' },
+  { id: SLIDE_IDS.COLOR_FORGE, name: 'ColorForge', icon: 'fas fa-palette' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];

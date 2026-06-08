@@ -22,6 +22,7 @@ export const SLIDE_IDS = {
   FOCUS_TIMER: 'focus-timer',
   TEXT_DIFF: 'text-diff',
   REGEX_PAL: 'regex-pal',
+  COLOR_FORGE: 'color-forge',
   OVERVIEW: 'overview',
 } as const;
 
