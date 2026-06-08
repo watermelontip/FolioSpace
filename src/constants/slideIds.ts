@@ -17,6 +17,7 @@ export const SLIDE_IDS = {
   PDF_LOCAL: 'pdf-local',
   QR_FORGE: 'qr-forge',
   PALETTE_SNAP: 'palette-snap',
+  HANDWRITE: 'handwrite',
   OVERVIEW: 'overview',
 } as const;
 
