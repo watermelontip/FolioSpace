@@ -9,6 +9,7 @@ export const SLIDE_IDS = {
   TOWER_GAME: 'tower-game',
   ALGO_VISUALIZER: 'algo-visualizer',
   AI_PRICING_RADAR: 'ai-pricing-radar',
+  DEV_VAULT: 'dev-vault',
   OVERVIEW: 'overview',
 } as const;
 

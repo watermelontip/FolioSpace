@@ -163,6 +163,23 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.DEV_VAULT,
+    name: 'DevVault',
+    title: 'DevVault',
+    preview: '',
+    position: { x: 2250, y: 0, z: 0, rotateY: 0 },
+    description:
+      '隐私优先的开发者工具箱：22 工具（JSON/Base64/Hash/JWT/正则...），单文件 HTML，零网络请求，完全离线',
+    descriptionEn:
+      'Privacy-first developer toolbox: 22 tools (JSON/Base64/Hash/JWT/Regex...), single-file HTML, zero network requests, fully offline',
+    tech: ['Privacy', 'DevTools', 'Single-file', 'Offline'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/DevVault/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/DevVault', text: 'Github', githubRepo: 'watermelontip/DevVault' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData = [
@@ -176,5 +193,6 @@ export const mapData = [
   { id: SLIDE_IDS.KAWAII_THEME, name: 'Kawaii Theme', icon: 'fas fa-palette' },
   { id: SLIDE_IDS.TOOLS_PORTAL, name: 'Tools Portal', icon: 'fas fa-tools' },
   { id: SLIDE_IDS.AI_PRICING_RADAR, name: 'AI Pricing Radar', icon: 'fas fa-chart-line' },
+  { id: SLIDE_IDS.DEV_VAULT, name: 'DevVault', icon: 'fas fa-shield-alt' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];
