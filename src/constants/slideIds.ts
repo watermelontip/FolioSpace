@@ -8,6 +8,7 @@ export const SLIDE_IDS = {
   ROUGH_CHART: 'rough-chart',
   TOWER_GAME: 'tower-game',
   ALGO_VISUALIZER: 'algo-visualizer',
+  AI_PRICING_RADAR: 'ai-pricing-radar',
   OVERVIEW: 'overview',
 } as const;
 

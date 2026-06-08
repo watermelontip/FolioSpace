@@ -146,6 +146,23 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.AI_PRICING_RADAR,
+    name: 'AI Pricing Radar',
+    title: 'AI Pricing Radar',
+    preview: '',
+    position: { x: 0, y: -3000, z: 200, rotateY: 0 },
+    description:
+      'AI 模型价格雷达：30+ 模型价格对比、月费计算器、场景推荐，覆盖 OpenAI/Anthropic/Google/DeepSeek 等 8 家厂商',
+    descriptionEn:
+      'AI Model Pricing Radar: compare 30+ models with cost calculator and scenario recommendations across 8 providers',
+    tech: ['AI', 'Pricing', 'Tool', 'Comparison'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/ai-pricing-radar/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/ai-pricing-radar', text: 'Github', githubRepo: 'watermelontip/ai-pricing-radar' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData = [
@@ -158,5 +175,6 @@ export const mapData = [
   { id: SLIDE_IDS.NET_TOOLBOX, name: 'Net Toolbox', icon: 'fas fa-network-wired' },
   { id: SLIDE_IDS.KAWAII_THEME, name: 'Kawaii Theme', icon: 'fas fa-palette' },
   { id: SLIDE_IDS.TOOLS_PORTAL, name: 'Tools Portal', icon: 'fas fa-tools' },
+  { id: SLIDE_IDS.AI_PRICING_RADAR, name: 'AI Pricing Radar', icon: 'fas fa-chart-line' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];
