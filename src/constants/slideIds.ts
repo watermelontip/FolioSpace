@@ -19,6 +19,7 @@ export const SLIDE_IDS = {
   PALETTE_SNAP: 'palette-snap',
   HANDWRITE: 'handwrite',
   FAVICON_FORGE: 'favicon-forge',
+  FOCUS_TIMER: 'focus-timer',
   OVERVIEW: 'overview',
 } as const;
 
