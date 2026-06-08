@@ -231,6 +231,7 @@ export const projectsData: Project[] = [
   },
   {id:SLIDE_IDS.SHADOW_FORGE,name:'Shadow Forge',title:'Shadow Forge',preview:'',position:{x:3250,y:0,z:0,rotateY:0},description:'CSS 阴影生成器：Box/Text Shadow、多层叠加、8 种预设，完全离线',descriptionEn:'CSS shadow generator: box/text shadow, multi-layer, 8 presets, fully offline',tech:['CSS','Design','Shadow','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/ShadowForge/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/ShadowForge',text:'Github',githubRepo:'watermelontip/ShadowForge'}],layout:'standard'},
   {id:SLIDE_IDS.PDF_LOCAL,name:'PDF Local',title:'PDF Local',preview:'',position:{x:3500,y:0,z:0,rotateY:0},description:'隐私优先的PDF工具箱：合并、拆分、旋转、水印、提取文本，文件不离开浏览器',descriptionEn:'Privacy-first PDF toolkit: merge, split, rotate, watermark, extract text. Files never leave your browser',tech:['PDF','Privacy','Offline','Tools'],links:[{type:'demo',url:'https://watermelontip.github.io/PdfLocal/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/PdfLocal',text:'Github',githubRepo:'watermelontip/PdfLocal'}],layout:'standard'},
+  {id:SLIDE_IDS.QR_FORGE,name:'QR Forge',title:'QR Forge',preview:'',position:{x:3750,y:0,z:0,rotateY:0},description:'二维码生成器：自定义颜色/纠错级别/模块大小，导出 PNG/SVG，完全离线',descriptionEn:'QR code generator: custom colors/EC level/module size, export PNG/SVG, fully offline',tech:['QR','Generator','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/QrForge/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/QrForge',text:'Github',githubRepo:'watermelontip/QrForge'}],layout:'standard'},
 ];
 
 export const mapData = [
@@ -250,5 +251,6 @@ export const mapData = [
   { id: SLIDE_IDS.GRADIENT_STUDIO, name: 'Gradient Studio', icon: 'fas fa-palette' },
   { id: SLIDE_IDS.SHADOW_FORGE, name: 'Shadow Forge', icon: 'fas fa-magic' },
   { id: SLIDE_IDS.PDF_LOCAL, name: 'PDF Local', icon: 'fas fa-file-pdf' },
+  { id: SLIDE_IDS.QR_FORGE, name: 'QR Forge', icon: 'fas fa-qrcode' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];

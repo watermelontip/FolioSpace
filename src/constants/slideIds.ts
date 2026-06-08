@@ -15,6 +15,7 @@ export const SLIDE_IDS = {
   GRADIENT_STUDIO: 'gradient-studio',
   SHADOW_FORGE: 'shadow-forge',
   PDF_LOCAL: 'pdf-local',
+  QR_FORGE: 'qr-forge',
   OVERVIEW: 'overview',
 } as const;
 
