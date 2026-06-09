@@ -24,6 +24,7 @@ export const SLIDE_IDS = {
   REGEX_PAL: 'regex-pal',
   COLOR_FORGE: 'color-forge',
   PIXEL_FORGE: 'pixel-forge',
+  PROMPT_KIT: 'prompt-kit',
   OVERVIEW: 'overview',
 } as const;
 
