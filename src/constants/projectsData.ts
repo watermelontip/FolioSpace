@@ -239,6 +239,7 @@ export const projectsData: Project[] = [
   {id:SLIDE_IDS.TEXT_DIFF,name:'TextDiff',title:'TextDiff',preview:'',position:{x:5000,y:0,z:0,rotateY:0},description:'文本对比工具：并排/统一 diff、行号、词级高亮、忽略空白/大小写，完全离线',descriptionEn:'Text diff tool: split/unified view, line numbers, word-level highlighting, ignore whitespace/case, fully offline',tech:['Diff','Text','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/TextDiff/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/TextDiff',text:'Github',githubRepo:'watermelontip/TextDiff'}],layout:'standard'},
   {id:SLIDE_IDS.REGEX_PAL,name:'RegexPal',title:'RegexPal',preview:'',position:{x:5250,y:0,z:0,rotateY:0},description:'正则表达式测试工具：实时匹配高亮、捕获组、替换测试、常用正则速查，完全离线',descriptionEn:'Regex tester: real-time matching, capture groups, replace test, common regex cheatsheet, fully offline',tech:['Regex','DevTools','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/RegexPal/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/RegexPal',text:'Github',githubRepo:'watermelontip/RegexPal'}],layout:'standard'},
   {id:SLIDE_IDS.COLOR_FORGE,name:'ColorForge',title:'ColorForge',preview:'',position:{x:5500,y:0,z:0,rotateY:0},description:'颜色转换与调色板：HEX/RGB/HSL/CMYK互转、色彩和谐、WCAG对比度、渐变预览，完全离线',descriptionEn:'Color converter & palette: HEX/RGB/HSL/CMYK, harmonies, WCAG contrast check, gradient preview, fully offline',tech:['Color','Design','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/ColorForge/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/ColorForge',text:'Github',githubRepo:'watermelontip/ColorForge'}],layout:'standard'},
+  {id:SLIDE_IDS.PIXEL_FORGE,name:'PixelForge',title:'PixelForge',preview:'',position:{x:5750,y:0,z:0,rotateY:0},description:'像素画编辑器：铅笔/橡皮/填充/取色、图层、镜像、撤销重做、导出PNG/SVG，完全离线',descriptionEn:'Pixel art editor: pencil/eraser/fill/eyedropper, layers, symmetry, undo/redo, export PNG/SVG, fully offline',tech:['PixelArt','Creative','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/PixelForge/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/PixelForge',text:'Github',githubRepo:'watermelontip/PixelForge'}],layout:'standard'},
 ];
 
 export const mapData = [
@@ -266,5 +267,6 @@ export const mapData = [
   { id: SLIDE_IDS.TEXT_DIFF, name: 'TextDiff', icon: 'fas fa-code-branch' },
   { id: SLIDE_IDS.REGEX_PAL, name: 'RegexPal', icon: 'fas fa-terminal' },
   { id: SLIDE_IDS.COLOR_FORGE, name: 'ColorForge', icon: 'fas fa-palette' },
+  { id: SLIDE_IDS.PIXEL_FORGE, name: 'PixelForge', icon: 'fas fa-pen-nib' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];

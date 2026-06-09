@@ -23,6 +23,7 @@ export const SLIDE_IDS = {
   TEXT_DIFF: 'text-diff',
   REGEX_PAL: 'regex-pal',
   COLOR_FORGE: 'color-forge',
+  PIXEL_FORGE: 'pixel-forge',
   OVERVIEW: 'overview',
 } as const;
 
