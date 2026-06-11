@@ -25,6 +25,7 @@ export const SLIDE_IDS = {
   REGEXLAB: 'regex-lab',
   JSONPRETTIFY: 'json-prettify',
   CHECKLIST: 'check-list',
+  EMOJIPICKER: 'emoji-picker',
   OVERVIEW: 'overview',
 } as const;
 

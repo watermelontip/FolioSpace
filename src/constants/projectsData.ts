@@ -419,6 +419,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.EMOJIPICKER,
+    name: 'EmojiPicker',
+    title: 'EmojiPicker',
+    preview: algoVisualizerPreview,
+    position: { x: -4200, y: 15200, z: 200, rotateY: 10 },
+    description: 'Emoji 选择器：搜索 + 分类浏览 + 一键复制',
+    descriptionEn: 'Emoji picker: search, category browsing, one-click copy',
+    tech: ['React', 'Vite', 'Emoji', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/emoji-picker/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/emoji-picker', text: 'Github', githubRepo: 'watermelontip/emoji-picker' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData
@@ -439,6 +454,7 @@ export const mapData
   { id: SLIDE_IDS.REGEXLAB, name: 'RegexLab', icon: 'fas fa-asterisk' },
   { id: SLIDE_IDS.JSONPRETTIFY, name: 'JsonPrettify', icon: 'fas fa-magic' },
   { id: SLIDE_IDS.CHECKLIST, name: 'CheckList', icon: 'fas fa-check-square' },
+  { id: SLIDE_IDS.EMOJIPICKER, name: 'EmojiPicker', icon: 'fas fa-smile' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
