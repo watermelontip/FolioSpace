@@ -180,6 +180,23 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.JSONTOTS,
+    name: 'JsonToTS',
+    title: 'JsonToTS',
+    preview: algoVisualizerPreview, // Reuse preview for now
+    position: { x: 300, y: 3200, z: 200, rotateY: -15 },
+    description:
+      'JSON 转 TypeScript 工具：实时转换 + 嵌套支持 + 自定义选项',
+    descriptionEn:
+      'JSON to TypeScript converter: real-time conversion, nested support, customizable options',
+    tech: ['React', 'Vite', 'TypeScript', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/json-to-ts/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/json-to-ts', text: 'Github', githubRepo: 'watermelontip/json-to-ts' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData = [
@@ -194,5 +211,6 @@ export const mapData = [
   { id: SLIDE_IDS.TOOLS_PORTAL, name: 'Tools Portal', icon: 'fas fa-tools' },
   { id: SLIDE_IDS.TOKENSCOPE, name: 'TokenScope', icon: 'fas fa-coins' },
   { id: SLIDE_IDS.CRONCRAFT, name: 'CronCraft', icon: 'fas fa-clock' },
+  { id: SLIDE_IDS.JSONTOTS, name: 'JsonToTS', icon: 'fas fa-exchange-alt' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];

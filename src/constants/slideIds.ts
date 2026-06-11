@@ -10,6 +10,7 @@ export const SLIDE_IDS = {
   ALGO_VISUALIZER: 'algo-visualizer',
   TOKENSCOPE: 'tokenscope',
   CRONCRAFT: 'croncraft',
+  JSONTOTS: 'json-to-ts',
   OVERVIEW: 'overview',
 } as const;
 
