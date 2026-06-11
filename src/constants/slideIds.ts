@@ -18,6 +18,7 @@ export const SLIDE_IDS = {
   YAMLFORGE: 'yaml-forge',
   BASE64FORGE: 'base64-forge',
   URLFORGE: 'url-forge',
+  COLORCONVERT: 'color-convert',
   OVERVIEW: 'overview',
 } as const;
 

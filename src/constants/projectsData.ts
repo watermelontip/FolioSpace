@@ -314,6 +314,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.COLORCONVERT,
+    name: 'ColorConvert',
+    title: 'ColorConvert',
+    preview: algoVisualizerPreview,
+    position: { x: -2100, y: 9600, z: 200, rotateY: -10 },
+    description: '颜色格式转换工具：HEX/RGB/HSL 互转 + 色彩调色板',
+    descriptionEn: 'Color format converter: HEX/RGB/HSL conversion + color palette',
+    tech: ['React', 'Vite', 'Color', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/color-convert/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/color-convert', text: 'Github', githubRepo: 'watermelontip/color-convert' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData
