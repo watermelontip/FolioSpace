@@ -674,6 +674,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.PALETTEGEN,
+    name: 'PaletteGen',
+    title: 'PaletteGen',
+    preview: algoVisualizerPreview,
+    position: { x: -9300, y: 28800, z: 200, rotateY: -20 },
+    description: '调色板生成器：6 种色彩和谐 + 明度渐变',
+    descriptionEn: 'Color palette generator: 6 harmonies, tint gradients',
+    tech: ['React', 'Vite', 'Color', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/palette-gen/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/palette-gen', text: 'Github', githubRepo: 'watermelontip/palette-gen' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData
@@ -711,6 +726,7 @@ export const mapData
   { id: SLIDE_IDS.HTMLENCODE, name: 'HtmlEncode', icon: 'fas fa-code' },
   { id: SLIDE_IDS.BASECONVERT, name: 'BaseConvert', icon: 'fas fa-calculator' },
   { id: SLIDE_IDS.TEXTDIFF, name: 'TextDiff', icon: 'fas fa-exchange-alt' },
+  { id: SLIDE_IDS.PALETTEGEN, name: 'PaletteGen', icon: 'fas fa-palette' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
