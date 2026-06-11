@@ -974,6 +974,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.QRCODEGEN,
+    name: 'QrCodeGen',
+    title: 'QrCodeGen',
+    preview: algoVisualizerPreview,
+    position: { x: -15300, y: 44800, z: 200, rotateY: -20 },
+    description: 'QR Code 生成器：文本/URL 转 二维码 + 自定义颜色/大小 + PNG/SVG 下载',
+    descriptionEn: 'QR Code Generator: text/URL to QR, custom colors/size, PNG/SVG download',
+    tech: ['React', 'Vite', 'QR', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/qr-code-gen/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/qr-code-gen', text: 'Github', githubRepo: 'watermelontip/qr-code-gen' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData
@@ -1031,6 +1046,7 @@ export const mapData
   { id: SLIDE_IDS.MARKDOWNTABLEGENV7, name: 'MarkdownTableGenV7', icon: 'fas fa-table' },
   { id: SLIDE_IDS.MARKDOWNTABLEGENV8, name: 'MarkdownTableGenV8', icon: 'fas fa-table' },
   { id: SLIDE_IDS.MARKDOWNTABLEGENV9, name: 'MarkdownTableGenV9', icon: 'fas fa-table' },
+  { id: SLIDE_IDS.QRCODEGEN, name: 'QrCodeGen', icon: 'fas fa-qrcode' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
