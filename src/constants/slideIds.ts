@@ -30,6 +30,7 @@ export const SLIDE_IDS = {
   LINKEXTRACT: 'link-extract',
   WORDCOUNTER: 'word-counter',
   IMAGEGALLERY: 'image-gallery',
+  CODEHIGHLIGHT: 'code-highlight',
   OVERVIEW: 'overview',
 } as const;
 

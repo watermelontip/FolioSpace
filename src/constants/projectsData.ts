@@ -494,6 +494,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.CODEHIGHLIGHT,
+    name: 'CodeHighlight',
+    title: 'CodeHighlight',
+    preview: algoVisualizerPreview,
+    position: { x: -5700, y: 19200, z: 200, rotateY: -20 },
+    description: '代码高亮工具：7 种语言 + Prism.js + 实时预览',
+    descriptionEn: 'Code highlight: 7 languages, Prism.js, real-time preview',
+    tech: ['React', 'Vite', 'Prism', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/code-highlight/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/code-highlight', text: 'Github', githubRepo: 'watermelontip/code-highlight' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData
@@ -519,6 +534,7 @@ export const mapData
   { id: SLIDE_IDS.LINKEXTRACT, name: 'LinkExtract', icon: 'fas fa-link' },
   { id: SLIDE_IDS.WORDCOUNTER, name: 'WordCounter', icon: 'fas fa-font' },
   { id: SLIDE_IDS.IMAGEGALLERY, name: 'ImageGallery', icon: 'fas fa-images' },
+  { id: SLIDE_IDS.CODEHIGHLIGHT, name: 'CodeHighlight', icon: 'fas fa-code' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
