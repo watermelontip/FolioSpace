@@ -146,6 +146,23 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.TOKENSCOPE,
+    name: 'TokenScope',
+    title: 'TokenScope',
+    preview: algoVisualizerPreview, // Reuse preview for now
+    position: { x: 900, y: 1600, z: 200, rotateY: -20 },
+    description:
+      'AI Token 可视化工具：实时 token 计数 + 多模型成本对比 + 视觉热力图 + 优化建议',
+    descriptionEn:
+      'AI Token visualization: real-time counting, multi-model cost comparison, visual heatmap, optimization tips',
+    tech: ['React', 'Vite', 'AI', 'Token'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/tokenscope/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/tokenscope', text: 'Github', githubRepo: 'watermelontip/tokenscope' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData = [
@@ -158,5 +175,6 @@ export const mapData = [
   { id: SLIDE_IDS.NET_TOOLBOX, name: 'Net Toolbox', icon: 'fas fa-network-wired' },
   { id: SLIDE_IDS.KAWAII_THEME, name: 'Kawaii Theme', icon: 'fas fa-palette' },
   { id: SLIDE_IDS.TOOLS_PORTAL, name: 'Tools Portal', icon: 'fas fa-tools' },
+  { id: SLIDE_IDS.TOKENSCOPE, name: 'TokenScope', icon: 'fas fa-coins' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];
