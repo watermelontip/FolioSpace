@@ -37,6 +37,7 @@ export const SLIDE_IDS = {
   TIMESTAMPCONVERT: 'timestamp-convert',
   IPLOOKUP: 'ip-lookup',
   LOREMGEN: 'lorem-gen',
+  MARKDOWNCHEAT: 'markdown-cheat',
   OVERVIEW: 'overview',
 } as const;
 

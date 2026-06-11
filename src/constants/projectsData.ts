@@ -599,6 +599,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.MARKDOWNCHEAT,
+    name: 'MarkdownCheat',
+    title: 'MarkdownCheat',
+    preview: algoVisualizerPreview,
+    position: { x: -7800, y: 24800, z: 200, rotateY: 10 },
+    description: 'Markdown 速查表：常用语法参考 + 点击复制',
+    descriptionEn: 'Markdown cheatsheet: syntax reference, click-to-copy',
+    tech: ['React', 'Vite', 'Markdown', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/markdown-cheat/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/markdown-cheat', text: 'Github', githubRepo: 'watermelontip/markdown-cheat' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData
@@ -631,6 +646,7 @@ export const mapData
   { id: SLIDE_IDS.TIMESTAMPCONVERT, name: 'TimestampConvert', icon: 'fas fa-clock' },
   { id: SLIDE_IDS.IPLOOKUP, name: 'IpLookup', icon: 'fas fa-globe' },
   { id: SLIDE_IDS.LOREMGEN, name: 'LoremGen', icon: 'fas fa-paragraph' },
+  { id: SLIDE_IDS.MARKDOWNCHEAT, name: 'MarkdownCheat', icon: 'fas fa-book' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
