@@ -20,6 +20,7 @@ export const SLIDE_IDS = {
   URLFORGE: 'url-forge',
   COLORCONVERT: 'color-convert',
   TABLEFORGE: 'table-forge',
+  JSONDIFF: 'json-diff',
   OVERVIEW: 'overview',
 } as const;
 

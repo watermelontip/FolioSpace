@@ -344,6 +344,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.JSONDIFF,
+    name: 'JsonDiff',
+    title: 'JsonDiff',
+    preview: algoVisualizerPreview,
+    position: { x: -2700, y: 11200, z: 200, rotateY: -10 },
+    description: 'JSON 差异比较工具：可视化差异 + 新增/删除/修改标记',
+    descriptionEn: 'JSON diff comparison tool: visual diff with add/remove/change markers',
+    tech: ['React', 'Vite', 'JSON', 'Diff'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/json-diff/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/json-diff', text: 'Github', githubRepo: 'watermelontip/json-diff' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData
@@ -359,6 +374,7 @@ export const mapData
   { id: SLIDE_IDS.TOKENSCOPE, name: 'TokenScope', icon: 'fas fa-coins' },
   { id: SLIDE_IDS.COLORCONVERT, name: 'ColorConvert', icon: 'fas fa-palette' },
   { id: SLIDE_IDS.TABLEFORGE, name: 'TableForge', icon: 'fas fa-table' },
+  { id: SLIDE_IDS.JSONDIFF, name: 'JsonDiff', icon: 'fas fa-code-branch' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
