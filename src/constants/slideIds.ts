@@ -53,6 +53,7 @@ export const SLIDE_IDS = {
   TEXTCOMPARE: 'text-compare',
   TABLEGENERATOR: 'table-generator',
   MARKDOWNTABLE: 'markdown-table',
+  MARKDOWNTABLEGEN: 'markdown-table-gen',
   OVERVIEW: 'overview',
 } as const;
 
