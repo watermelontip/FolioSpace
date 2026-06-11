@@ -51,6 +51,7 @@ export const SLIDE_IDS = {
   TEXTREVERSE: 'text-reverse',
   TEXTSTATS: 'text-stats',
   TEXTCOMPARE: 'text-compare',
+  TABLEGENERATOR: 'table-generator',
   OVERVIEW: 'overview',
 } as const;
 
