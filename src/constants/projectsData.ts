@@ -265,6 +265,23 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.YAMLFORGE,
+    name: 'YamlForge',
+    title: 'YamlForge',
+    preview: algoVisualizerPreview, // Reuse preview for now
+    position: { x: -1200, y: 7200, z: 200, rotateY: 10 },
+    description:
+      'YAML ↔ JSON 双向转换工具：实时预览 + 语法高亮 + 格式化',
+    descriptionEn:
+      'YAML/JSON bidirectional converter: real-time preview, syntax highlighting, formatting',
+    tech: ['React', 'Vite', 'YAML', 'JSON'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/yaml-forge/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/yaml-forge', text: 'Github', githubRepo: 'watermelontip/yaml-forge' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData = [
@@ -284,5 +301,6 @@ export const mapData = [
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
   { id: SLIDE_IDS.GRIDFORGE, name: 'GridForge', icon: 'fas fa-th' },
   { id: SLIDE_IDS.JSONTOCSV, name: 'JsonToCSV', icon: 'fas fa-file-csv' },
+  { id: SLIDE_IDS.YAMLFORGE, name: 'YamlForge', icon: 'fas fa-exchange-alt' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];
