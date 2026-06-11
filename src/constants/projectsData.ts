@@ -584,6 +584,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.LOREMGEN,
+    name: 'LoremGen',
+    title: 'LoremGen',
+    preview: algoVisualizerPreview,
+    position: { x: -7500, y: 24000, z: 200, rotateY: -20 },
+    description: 'Lorem Ipsum 占位文本生成器：Latin + 中文',
+    descriptionEn: 'Lorem ipsum generator: Latin + Chinese',
+    tech: ['React', 'Vite', 'Text', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/lorem-gen/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/lorem-gen', text: 'Github', githubRepo: 'watermelontip/lorem-gen' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData
@@ -615,6 +630,7 @@ export const mapData
   { id: SLIDE_IDS.UUIDGEN, name: 'UuidGen', icon: 'fas fa-fingerprint' },
   { id: SLIDE_IDS.TIMESTAMPCONVERT, name: 'TimestampConvert', icon: 'fas fa-clock' },
   { id: SLIDE_IDS.IPLOOKUP, name: 'IpLookup', icon: 'fas fa-globe' },
+  { id: SLIDE_IDS.LOREMGEN, name: 'LoremGen', icon: 'fas fa-paragraph' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },

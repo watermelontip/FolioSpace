@@ -36,6 +36,7 @@ export const SLIDE_IDS = {
   UUIDGEN: 'uuid-gen',
   TIMESTAMPCONVERT: 'timestamp-convert',
   IPLOOKUP: 'ip-lookup',
+  LOREMGEN: 'lorem-gen',
   OVERVIEW: 'overview',
 } as const;
 
