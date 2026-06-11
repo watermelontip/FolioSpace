@@ -214,6 +214,23 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.SCHEMAVIZ,
+    name: 'SchemaViz',
+    title: 'SchemaViz',
+    preview: algoVisualizerPreview, // Reuse preview for now
+    position: { x: -300, y: 4800, z: 200, rotateY: -10 },
+    description:
+      'JSON Schema 可视化工具：交互式树形图 + 类型高亮 + 节点详情',
+    descriptionEn:
+      'JSON Schema visualizer: interactive tree view, color-coded types, node details',
+    tech: ['React', 'Vite', 'JSON', 'Schema'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/schema-viz/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/schema-viz', text: 'Github', githubRepo: 'watermelontip/schema-viz' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData = [
@@ -230,5 +247,6 @@ export const mapData = [
   { id: SLIDE_IDS.CRONCRAFT, name: 'CronCraft', icon: 'fas fa-clock' },
   { id: SLIDE_IDS.JSONTOTS, name: 'JsonToTS', icon: 'fas fa-exchange-alt' },
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
+  { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];

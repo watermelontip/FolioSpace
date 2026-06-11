@@ -12,6 +12,7 @@ export const SLIDE_IDS = {
   CRONCRAFT: 'croncraft',
   JSONTOTS: 'json-to-ts',
   MARKPDF: 'markpdf',
+  SCHEMAVIZ: 'schema-viz',
   OVERVIEW: 'overview',
 } as const;
 
