@@ -659,6 +659,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.TEXTDIFF,
+    name: 'TextDiff',
+    title: 'TextDiff',
+    preview: algoVisualizerPreview,
+    position: { x: -9000, y: 28000, z: 200, rotateY: 15 },
+    description: '文本对比工具：逐行差异 + LCS 算法 + 可视化增删改',
+    descriptionEn: 'Text comparison: line diff, LCS algorithm, visual markers',
+    tech: ['React', 'Vite', 'Diff', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/text-diff/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/text-diff', text: 'Github', githubRepo: 'watermelontip/text-diff' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData
@@ -695,6 +710,7 @@ export const mapData
   { id: SLIDE_IDS.CSSUNITS, name: 'CssUnits', icon: 'fas fa-ruler' },
   { id: SLIDE_IDS.HTMLENCODE, name: 'HtmlEncode', icon: 'fas fa-code' },
   { id: SLIDE_IDS.BASECONVERT, name: 'BaseConvert', icon: 'fas fa-calculator' },
+  { id: SLIDE_IDS.TEXTDIFF, name: 'TextDiff', icon: 'fas fa-exchange-alt' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },

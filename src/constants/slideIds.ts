@@ -41,6 +41,7 @@ export const SLIDE_IDS = {
   CSSUNITS: 'css-units',
   HTMLENCODE: 'html-encode',
   BASECONVERT: 'base-convert',
+  TEXTDIFF: 'text-diff',
   OVERVIEW: 'overview',
 } as const;
 
