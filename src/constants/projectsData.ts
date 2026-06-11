@@ -704,6 +704,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.LINECOUNTER,
+    name: 'LineCounter',
+    title: 'LineCounter',
+    preview: algoVisualizerPreview,
+    position: { x: -9900, y: 30400, z: 200, rotateY: -15 },
+    description: '行数统计器：按文件类型统计代码/注释/空白行数',
+    descriptionEn: 'Line counter: code/comment/blank lines by file type',
+    tech: ['React', 'Vite', 'Analytics', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/line-counter/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/line-counter', text: 'Github', githubRepo: 'watermelontip/line-counter' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData
@@ -743,6 +758,7 @@ export const mapData
   { id: SLIDE_IDS.TEXTDIFF, name: 'TextDiff', icon: 'fas fa-exchange-alt' },
   { id: SLIDE_IDS.PALETTEGEN, name: 'PaletteGen', icon: 'fas fa-palette' },
   { id: SLIDE_IDS.CSVTOTABLE, name: 'CsvToTable', icon: 'fas fa-table' },
+  { id: SLIDE_IDS.LINECOUNTER, name: 'LineCounter', icon: 'fas fa-list-ol' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },

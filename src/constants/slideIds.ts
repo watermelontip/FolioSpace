@@ -44,6 +44,7 @@ export const SLIDE_IDS = {
   TEXTDIFF: 'text-diff',
   PALETTEGEN: 'palette-gen',
   CSVTOTABLE: 'csv-to-table',
+  LINECOUNTER: 'line-counter',
   OVERVIEW: 'overview',
 } as const;
 
