@@ -55,6 +55,7 @@ export const SLIDE_IDS = {
   MARKDOWNTABLE: 'markdown-table',
   MARKDOWNTABLEGEN: 'markdown-table-gen',
   MARKDOWNTABLEGENV2: 'markdown-table-gen-v2',
+  MARKDOWNTABLEGENV3: 'markdown-table-gen-v3',
   OVERVIEW: 'overview',
 } as const;
 
