@@ -554,6 +554,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.TIMESTAMPCONVERT,
+    name: 'TimestampConvert',
+    title: 'TimestampConvert',
+    preview: algoVisualizerPreview,
+    position: { x: -6900, y: 22400, z: 200, rotateY: -10 },
+    description: '时间戳转换器：Unix 时间戳与日期互转 + 实时时钟',
+    descriptionEn: 'Timestamp converter: Unix timestamp ↔ date, real-time clock',
+    tech: ['React', 'Vite', 'Timestamp', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/timestamp-convert/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/timestamp-convert', text: 'Github', githubRepo: 'watermelontip/timestamp-convert' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData
@@ -583,6 +598,7 @@ export const mapData
   { id: SLIDE_IDS.TASKBOARD, name: 'TaskBoard', icon: 'fas fa-columns' },
   { id: SLIDE_IDS.PASSWORDGEN, name: 'PasswordGen', icon: 'fas fa-key' },
   { id: SLIDE_IDS.UUIDGEN, name: 'UuidGen', icon: 'fas fa-fingerprint' },
+  { id: SLIDE_IDS.TIMESTAMPCONVERT, name: 'TimestampConvert', icon: 'fas fa-clock' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },

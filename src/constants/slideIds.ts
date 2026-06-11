@@ -34,6 +34,7 @@ export const SLIDE_IDS = {
   TASKBOARD: 'task-board',
   PASSWORDGEN: 'password-gen',
   UUIDGEN: 'uuid-gen',
+  TIMESTAMPCONVERT: 'timestamp-convert',
   OVERVIEW: 'overview',
 } as const;
 
