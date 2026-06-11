@@ -38,6 +38,7 @@ export const SLIDE_IDS = {
   IPLOOKUP: 'ip-lookup',
   LOREMGEN: 'lorem-gen',
   MARKDOWNCHEAT: 'markdown-cheat',
+  CSSUNITS: 'css-units',
   OVERVIEW: 'overview',
 } as const;
 

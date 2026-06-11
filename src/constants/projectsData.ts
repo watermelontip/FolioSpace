@@ -614,6 +614,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.CSSUNITS,
+    name: 'CssUnits',
+    title: 'CssUnits',
+    preview: algoVisualizerPreview,
+    position: { x: -8100, y: 25600, z: 200, rotateY: -15 },
+    description: 'CSS 单位转换器：px/em/rem/%/vw/vh 互转',
+    descriptionEn: 'CSS unit converter: px/em/rem/%/vw/vh conversion',
+    tech: ['React', 'Vite', 'CSS', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/css-units/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/css-units', text: 'Github', githubRepo: 'watermelontip/css-units' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData
@@ -647,6 +662,7 @@ export const mapData
   { id: SLIDE_IDS.IPLOOKUP, name: 'IpLookup', icon: 'fas fa-globe' },
   { id: SLIDE_IDS.LOREMGEN, name: 'LoremGen', icon: 'fas fa-paragraph' },
   { id: SLIDE_IDS.MARKDOWNCHEAT, name: 'MarkdownCheat', icon: 'fas fa-book' },
+  { id: SLIDE_IDS.CSSUNITS, name: 'CssUnits', icon: 'fas fa-ruler' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
