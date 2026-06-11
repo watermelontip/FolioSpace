@@ -9,6 +9,7 @@ export const SLIDE_IDS = {
   TOWER_GAME: 'tower-game',
   ALGO_VISUALIZER: 'algo-visualizer',
   TOKENSCOPE: 'tokenscope',
+  CRONCRAFT: 'croncraft',
   OVERVIEW: 'overview',
 } as const;
 

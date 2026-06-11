@@ -163,6 +163,23 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.CRONCRAFT,
+    name: 'CronCraft',
+    title: 'CronCraft',
+    preview: algoVisualizerPreview, // Reuse preview for now
+    position: { x: 600, y: 2400, z: 200, rotateY: 20 },
+    description:
+      '可视化 Cron 表达式编辑器：实时预览执行计划 + 20+ 预设模板 + 中文描述',
+    descriptionEn:
+      'Visual Cron expression editor: real-time execution preview, 20+ presets, Chinese support',
+    tech: ['React', 'Vite', 'Cron', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/croncraft/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/croncraft', text: 'Github', githubRepo: 'watermelontip/croncraft' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData = [
@@ -176,5 +193,6 @@ export const mapData = [
   { id: SLIDE_IDS.KAWAII_THEME, name: 'Kawaii Theme', icon: 'fas fa-palette' },
   { id: SLIDE_IDS.TOOLS_PORTAL, name: 'Tools Portal', icon: 'fas fa-tools' },
   { id: SLIDE_IDS.TOKENSCOPE, name: 'TokenScope', icon: 'fas fa-coins' },
+  { id: SLIDE_IDS.CRONCRAFT, name: 'CronCraft', icon: 'fas fa-clock' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];
