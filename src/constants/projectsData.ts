@@ -524,6 +524,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.PASSWORDGEN,
+    name: 'PasswordGen',
+    title: 'PasswordGen',
+    preview: algoVisualizerPreview,
+    position: { x: -6300, y: 20800, z: 200, rotateY: -15 },
+    description: '密码生成器：安全随机密码 + 强度检测 + 历史记录',
+    descriptionEn: 'Password generator: secure random, strength detection, history',
+    tech: ['React', 'Vite', 'Security', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/password-gen/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/password-gen', text: 'Github', githubRepo: 'watermelontip/password-gen' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData
@@ -551,6 +566,7 @@ export const mapData
   { id: SLIDE_IDS.IMAGEGALLERY, name: 'ImageGallery', icon: 'fas fa-images' },
   { id: SLIDE_IDS.CODEHIGHLIGHT, name: 'CodeHighlight', icon: 'fas fa-code' },
   { id: SLIDE_IDS.TASKBOARD, name: 'TaskBoard', icon: 'fas fa-columns' },
+  { id: SLIDE_IDS.PASSWORDGEN, name: 'PasswordGen', icon: 'fas fa-key' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },

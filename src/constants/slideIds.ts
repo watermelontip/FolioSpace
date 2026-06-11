@@ -32,6 +32,7 @@ export const SLIDE_IDS = {
   IMAGEGALLERY: 'image-gallery',
   CODEHIGHLIGHT: 'code-highlight',
   TASKBOARD: 'task-board',
+  PASSWORDGEN: 'password-gen',
   OVERVIEW: 'overview',
 } as const;
 
