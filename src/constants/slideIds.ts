@@ -39,6 +39,7 @@ export const SLIDE_IDS = {
   LOREMGEN: 'lorem-gen',
   MARKDOWNCHEAT: 'markdown-cheat',
   CSSUNITS: 'css-units',
+  HTMLENCODE: 'html-encode',
   OVERVIEW: 'overview',
 } as const;
 

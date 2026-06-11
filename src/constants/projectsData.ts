@@ -629,6 +629,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.HTMLENCODE,
+    name: 'HtmlEncode',
+    title: 'HtmlEncode',
+    preview: algoVisualizerPreview,
+    position: { x: -8400, y: 26400, z: 200, rotateY: 20 },
+    description: 'HTML 实体编码器：编码/解码 + 常用实体参考',
+    descriptionEn: 'HTML entity encoder: encode/decode, common entities reference',
+    tech: ['React', 'Vite', 'HTML', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/html-encode/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/html-encode', text: 'Github', githubRepo: 'watermelontip/html-encode' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData
@@ -663,6 +678,7 @@ export const mapData
   { id: SLIDE_IDS.LOREMGEN, name: 'LoremGen', icon: 'fas fa-paragraph' },
   { id: SLIDE_IDS.MARKDOWNCHEAT, name: 'MarkdownCheat', icon: 'fas fa-book' },
   { id: SLIDE_IDS.CSSUNITS, name: 'CssUnits', icon: 'fas fa-ruler' },
+  { id: SLIDE_IDS.HTMLENCODE, name: 'HtmlEncode', icon: 'fas fa-code' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
