@@ -136,9 +136,9 @@ export const projectsData: Project[] = [
     preview: toolsPortalPreview,
     position: { x: 1060, y: -1060, z: 1400, rotateY: 315 },
     description:
-      '免费在线开发者工具箱：JSON 格式化、Base64、颜色转换、正则测试等 15 个工具',
+      '免费在线开发者工具箱：JSON 格式化、Base64、颜色转换、正则测试、QR 码、渐变生成等 21 个工具',
     descriptionEn:
-      'Free online developer toolbox: JSON, Base64, color converter, regex tester and 15+ tools',
+      'Free online developer toolbox: JSON, Base64, color converter, regex, QR code, gradient generator and 21 tools',
     tech: ['Vue', 'CDN', 'Tools', 'Static'],
     links: [
       { type: 'demo', url: 'https://watermelontip.github.io/tools-portal-cdn/', text: 'Live Demo' },
@@ -146,101 +146,6 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
-  {
-    id: SLIDE_IDS.AI_PRICING_RADAR,
-    name: 'AI Pricing Radar',
-    title: 'AI Pricing Radar',
-    preview: '',
-    position: { x: 0, y: -3000, z: 200, rotateY: 0 },
-    description:
-      'AI 模型价格雷达：30+ 模型价格对比、月费计算器、场景推荐，覆盖 OpenAI/Anthropic/Google/DeepSeek 等 8 家厂商',
-    descriptionEn:
-      'AI Model Pricing Radar: compare 30+ models with cost calculator and scenario recommendations across 8 providers',
-    tech: ['AI', 'Pricing', 'Tool', 'Comparison'],
-    links: [
-      { type: 'demo', url: 'https://watermelontip.github.io/ai-pricing-radar/', text: 'Live Demo' },
-      { type: 'code', url: 'https://github.com/watermelontip/ai-pricing-radar', text: 'Github', githubRepo: 'watermelontip/ai-pricing-radar' },
-    ],
-    layout: 'standard',
-  },
-  {
-    id: SLIDE_IDS.DEV_VAULT,
-    name: 'DevVault',
-    title: 'DevVault',
-    preview: '',
-    position: { x: 2250, y: 0, z: 0, rotateY: 0 },
-    description:
-      '隐私优先的开发者工具箱：22 工具（JSON/Base64/Hash/JWT/正则...），单文件 HTML，零网络请求，完全离线',
-    descriptionEn:
-      'Privacy-first developer toolbox: 22 tools (JSON/Base64/Hash/JWT/Regex...), single-file HTML, zero network requests, fully offline',
-    tech: ['Privacy', 'DevTools', 'Single-file', 'Offline'],
-    links: [
-      { type: 'demo', url: 'https://watermelontip.github.io/DevVault/', text: 'Live Demo' },
-      { type: 'code', url: 'https://github.com/watermelontip/DevVault', text: 'Github', githubRepo: 'watermelontip/DevVault' },
-    ],
-    layout: 'standard',
-  },
-  {
-    id: SLIDE_IDS.JSON_LENS,
-    name: 'JsonLens',
-    title: 'JsonLens',
-    preview: '',
-    position: { x: 2500, y: 0, z: 0, rotateY: 0 },
-    description:
-      'JSON 可视化浏览器：树形渲染/搜索高亮/统计面板，支持大文件，单文件 HTML，完全离线',
-    descriptionEn:
-      'JSON visual browser: collapsible tree, search highlighting, stats panel, large file support, single-file HTML, fully offline',
-    tech: ['JSON', 'Visualization', 'Privacy', 'Offline'],
-    links: [
-      { type: 'demo', url: 'https://watermelontip.github.io/JsonLens/', text: 'Live Demo' },
-      { type: 'code', url: 'https://github.com/watermelontip/JsonLens', text: 'Github', githubRepo: 'watermelontip/JsonLens' },
-    ],
-    layout: 'standard',
-  },
-  {
-    id: SLIDE_IDS.MARK_SNAP,
-    name: 'MarkSnap',
-    title: 'MarkSnap',
-    preview: '',
-    position: { x: 2750, y: 0, z: 0, rotateY: 0 },
-    description:
-      'Markdown 转图片工具：7 种主题、导出 PNG、代码高亮，单文件 HTML，完全离线',
-    descriptionEn:
-      'Markdown to image tool: 7 themes, PNG export, code highlighting, single-file HTML, fully offline',
-    tech: ['Markdown', 'Image', 'Privacy', 'Offline'],
-    links: [
-      { type: 'demo', url: 'https://watermelontip.github.io/MarkSnap/', text: 'Live Demo' },
-      { type: 'code', url: 'https://github.com/watermelontip/MarkSnap', text: 'Github', githubRepo: 'watermelontip/MarkSnap' },
-    ],
-    layout: 'standard',
-  },
-  {
-    id: SLIDE_IDS.GRADIENT_STUDIO,
-    name: 'Gradient Studio',
-    title: 'Gradient Studio',
-    preview: '',
-    position: { x: 3000, y: 0, z: 0, rotateY: 0 },
-    description: 'CSS 渐变生成器：线性/径向/锥形、16 种预设、一键复制 CSS，完全离线',
-    descriptionEn: 'CSS gradient generator: linear/radial/conic, 16 presets, copy CSS, fully offline',
-    tech: ['CSS', 'Design', 'Gradient', 'Offline'],
-    links: [
-      { type: 'demo', url: 'https://watermelontip.github.io/GradientStudio/', text: 'Live Demo' },
-      { type: 'code', url: 'https://github.com/watermelontip/GradientStudio', text: 'Github', githubRepo: 'watermelontip/GradientStudio' },
-    ],
-    layout: 'standard',
-  },
-  {id:SLIDE_IDS.SHADOW_FORGE,name:'Shadow Forge',title:'Shadow Forge',preview:'',position:{x:3250,y:0,z:0,rotateY:0},description:'CSS 阴影生成器：Box/Text Shadow、多层叠加、8 种预设，完全离线',descriptionEn:'CSS shadow generator: box/text shadow, multi-layer, 8 presets, fully offline',tech:['CSS','Design','Shadow','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/ShadowForge/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/ShadowForge',text:'Github',githubRepo:'watermelontip/ShadowForge'}],layout:'standard'},
-  {id:SLIDE_IDS.PDF_LOCAL,name:'PDF Local',title:'PDF Local',preview:'',position:{x:3500,y:0,z:0,rotateY:0},description:'隐私优先的PDF工具箱：合并、拆分、旋转、水印、提取文本，文件不离开浏览器',descriptionEn:'Privacy-first PDF toolkit: merge, split, rotate, watermark, extract text. Files never leave your browser',tech:['PDF','Privacy','Offline','Tools'],links:[{type:'demo',url:'https://watermelontip.github.io/PdfLocal/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/PdfLocal',text:'Github',githubRepo:'watermelontip/PdfLocal'}],layout:'standard'},
-  {id:SLIDE_IDS.QR_FORGE,name:'QR Forge',title:'QR Forge',preview:'',position:{x:3750,y:0,z:0,rotateY:0},description:'二维码生成器：自定义颜色/纠错级别/模块大小，导出 PNG/SVG，完全离线',descriptionEn:'QR code generator: custom colors/EC level/module size, export PNG/SVG, fully offline',tech:['QR','Generator','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/QrForge/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/QrForge',text:'Github',githubRepo:'watermelontip/QrForge'}],layout:'standard'},
-  {id:SLIDE_IDS.PALETTE_SNAP,name:'Palette Snap',title:'Palette Snap',preview:'',position:{x:4000,y:0,z:0,rotateY:0},description:'图片取色板：从图片提取色彩方案，可调颜色数量，导出 CSS 变量/Tailwind，图片不离开浏览器',descriptionEn:'Image color palette extractor: extract colors from images, export CSS vars/Tailwind, images never leave browser',tech:['Color','Design','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/PaletteSnap/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/PaletteSnap',text:'Github',githubRepo:'watermelontip/PaletteSnap'}],layout:'standard'},
-  {id:SLIDE_IDS.HANDWRITE,name:'Handwrite',title:'Handwrite',preview:'',position:{x:4250,y:0,z:0,rotateY:0},description:'文字转手写体：3 种字体、5 种纸张、5 种笔色，导出 PNG，文字不离开浏览器',descriptionEn:'Text to handwriting: 3 fonts, 5 paper styles, 5 pen colors, export PNG, text never leaves browser',tech:['Text','Handwriting','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/Handwrite/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/Handwrite',text:'Github',githubRepo:'watermelontip/Handwrite'}],layout:'standard'},
-  {id:SLIDE_IDS.FAVICON_FORGE,name:'Favicon Forge',title:'Favicon Forge',preview:'',position:{x:4500,y:0,z:0,rotateY:0},description:'Favicon 生成器：文字/Emoji/形状、多尺寸导出、生成 HTML 标签，完全离线',descriptionEn:'Favicon generator: text/emoji/shapes, multi-size export, HTML tags, fully offline',tech:['Favicon','Generator','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/FaviconForge/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/FaviconForge',text:'Github',githubRepo:'watermelontip/FaviconForge'}],layout:'standard'},
-  {id:SLIDE_IDS.FOCUS_TIMER,name:'Focus Timer',title:'Focus Timer',preview:'',position:{x:4750,y:0,z:0,rotateY:0},description:'番茄钟计时器：工作/短休/长休循环、统计面板、自定义时长、浏览器通知，完全离线',descriptionEn:'Pomodoro timer: work/break cycles, stats panel, custom durations, browser notifications, fully offline',tech:['Productivity','Timer','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/FocusTimer/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/FocusTimer',text:'Github',githubRepo:'watermelontip/FocusTimer'}],layout:'standard'},
-  {id:SLIDE_IDS.TEXT_DIFF,name:'TextDiff',title:'TextDiff',preview:'',position:{x:5000,y:0,z:0,rotateY:0},description:'文本对比工具：并排/统一 diff、行号、词级高亮、忽略空白/大小写，完全离线',descriptionEn:'Text diff tool: split/unified view, line numbers, word-level highlighting, ignore whitespace/case, fully offline',tech:['Diff','Text','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/TextDiff/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/TextDiff',text:'Github',githubRepo:'watermelontip/TextDiff'}],layout:'standard'},
-  {id:SLIDE_IDS.REGEX_PAL,name:'RegexPal',title:'RegexPal',preview:'',position:{x:5250,y:0,z:0,rotateY:0},description:'正则表达式测试工具：实时匹配高亮、捕获组、替换测试、常用正则速查，完全离线',descriptionEn:'Regex tester: real-time matching, capture groups, replace test, common regex cheatsheet, fully offline',tech:['Regex','DevTools','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/RegexPal/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/RegexPal',text:'Github',githubRepo:'watermelontip/RegexPal'}],layout:'standard'},
-  {id:SLIDE_IDS.COLOR_FORGE,name:'ColorForge',title:'ColorForge',preview:'',position:{x:5500,y:0,z:0,rotateY:0},description:'颜色转换与调色板：HEX/RGB/HSL/CMYK互转、色彩和谐、WCAG对比度、渐变预览，完全离线',descriptionEn:'Color converter & palette: HEX/RGB/HSL/CMYK, harmonies, WCAG contrast check, gradient preview, fully offline',tech:['Color','Design','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/ColorForge/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/ColorForge',text:'Github',githubRepo:'watermelontip/ColorForge'}],layout:'standard'},
-  {id:SLIDE_IDS.PIXEL_FORGE,name:'PixelForge',title:'PixelForge',preview:'',position:{x:5750,y:0,z:0,rotateY:0},description:'像素画编辑器：铅笔/橡皮/填充/取色、图层、镜像、撤销重做、导出PNG/SVG，完全离线',descriptionEn:'Pixel art editor: pencil/eraser/fill/eyedropper, layers, symmetry, undo/redo, export PNG/SVG, fully offline',tech:['PixelArt','Creative','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/PixelForge/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/PixelForge',text:'Github',githubRepo:'watermelontip/PixelForge'}],layout:'standard'},
-  {id:SLIDE_IDS.PROMPT_KIT,name:'PromptKit',title:'PromptKit',preview:'',position:{x:6000,y:0,z:0,rotateY:0},description:'AI 提示词工具箱：12 个模板、变量替换、优化建议、Token 估算，完全离线',descriptionEn:'AI prompt toolkit: 12 templates, variable substitution, optimization tips, token estimator, fully offline',tech:['AI','Prompt','Privacy','Offline'],links:[{type:'demo',url:'https://watermelontip.github.io/PromptKit/',text:'Live Demo'},{type:'code',url:'https://github.com/watermelontip/PromptKit',text:'Github',githubRepo:'watermelontip/PromptKit'}],layout:'standard'},
 ];
 
 export const mapData = [
@@ -253,22 +158,5 @@ export const mapData = [
   { id: SLIDE_IDS.NET_TOOLBOX, name: 'Net Toolbox', icon: 'fas fa-network-wired' },
   { id: SLIDE_IDS.KAWAII_THEME, name: 'Kawaii Theme', icon: 'fas fa-palette' },
   { id: SLIDE_IDS.TOOLS_PORTAL, name: 'Tools Portal', icon: 'fas fa-tools' },
-  { id: SLIDE_IDS.AI_PRICING_RADAR, name: 'AI Pricing Radar', icon: 'fas fa-chart-line' },
-  { id: SLIDE_IDS.DEV_VAULT, name: 'DevVault', icon: 'fas fa-shield-alt' },
-  { id: SLIDE_IDS.JSON_LENS, name: 'JsonLens', icon: 'fas fa-search' },
-  { id: SLIDE_IDS.MARK_SNAP, name: 'MarkSnap', icon: 'fas fa-camera' },
-  { id: SLIDE_IDS.GRADIENT_STUDIO, name: 'Gradient Studio', icon: 'fas fa-palette' },
-  { id: SLIDE_IDS.SHADOW_FORGE, name: 'Shadow Forge', icon: 'fas fa-magic' },
-  { id: SLIDE_IDS.PDF_LOCAL, name: 'PDF Local', icon: 'fas fa-file-pdf' },
-  { id: SLIDE_IDS.QR_FORGE, name: 'QR Forge', icon: 'fas fa-qrcode' },
-  { id: SLIDE_IDS.PALETTE_SNAP, name: 'Palette Snap', icon: 'fas fa-eye-dropper' },
-  { id: SLIDE_IDS.HANDWRITE, name: 'Handwrite', icon: 'fas fa-pen-fancy' },
-  { id: SLIDE_IDS.FAVICON_FORGE, name: 'Favicon Forge', icon: 'fas fa-icons' },
-  { id: SLIDE_IDS.FOCUS_TIMER, name: 'Focus Timer', icon: 'fas fa-clock' },
-  { id: SLIDE_IDS.TEXT_DIFF, name: 'TextDiff', icon: 'fas fa-code-branch' },
-  { id: SLIDE_IDS.REGEX_PAL, name: 'RegexPal', icon: 'fas fa-terminal' },
-  { id: SLIDE_IDS.COLOR_FORGE, name: 'ColorForge', icon: 'fas fa-palette' },
-  { id: SLIDE_IDS.PIXEL_FORGE, name: 'PixelForge', icon: 'fas fa-pen-nib' },
-  { id: SLIDE_IDS.PROMPT_KIT, name: 'PromptKit', icon: 'fas fa-brain' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];
