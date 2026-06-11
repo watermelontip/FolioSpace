@@ -389,6 +389,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.JSONPRETTIFY,
+    name: 'JsonPrettify',
+    title: 'JsonPrettify',
+    preview: algoVisualizerPreview,
+    position: { x: -3600, y: 13600, z: 200, rotateY: 10 },
+    description: 'JSON 格式化/压缩工具：美化 + 压缩 + 验证 + 统计',
+    descriptionEn: 'JSON prettify/minify tool: beautify, minify, validate, stats',
+    tech: ['React', 'Vite', 'JSON', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/json-prettify/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/json-prettify', text: 'Github', githubRepo: 'watermelontip/json-prettify' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData
@@ -407,6 +422,7 @@ export const mapData
   { id: SLIDE_IDS.JSONDIFF, name: 'JsonDiff', icon: 'fas fa-code-branch' },
   { id: SLIDE_IDS.MARKPREVIEW, name: 'MarkPreview', icon: 'fas fa-eye' },
   { id: SLIDE_IDS.REGEXLAB, name: 'RegexLab', icon: 'fas fa-asterisk' },
+  { id: SLIDE_IDS.JSONPRETTIFY, name: 'JsonPrettify', icon: 'fas fa-magic' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },

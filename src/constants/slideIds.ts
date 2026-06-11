@@ -23,6 +23,7 @@ export const SLIDE_IDS = {
   JSONDIFF: 'json-diff',
   MARKPREVIEW: 'mark-preview',
   REGEXLAB: 'regex-lab',
+  JSONPRETTIFY: 'json-prettify',
   OVERVIEW: 'overview',
 } as const;
 
