@@ -824,6 +824,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.MARKDOWNTABLE,
+    name: 'MarkdownTable',
+    title: 'MarkdownTable',
+    preview: algoVisualizerPreview,
+    position: { x: -12300, y: 36800, z: 200, rotateY: -20 },
+    description: 'Markdown 表格生成器：可视化编辑 + 对齐控制',
+    descriptionEn: 'Markdown table generator: visual editor, alignment control',
+    tech: ['React', 'Vite', 'Markdown', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/markdown-table/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/markdown-table', text: 'Github', githubRepo: 'watermelontip/markdown-table' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData
@@ -871,6 +886,7 @@ export const mapData
   { id: SLIDE_IDS.TEXTSTATS, name: 'TextStats', icon: 'fas fa-chart-bar' },
   { id: SLIDE_IDS.TEXTCOMPARE, name: 'TextCompare', icon: 'fas fa-columns' },
   { id: SLIDE_IDS.TABLEGENERATOR, name: 'TableGenerator', icon: 'fas fa-table' },
+  { id: SLIDE_IDS.MARKDOWNTABLE, name: 'MarkdownTable', icon: 'fas fa-table' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
