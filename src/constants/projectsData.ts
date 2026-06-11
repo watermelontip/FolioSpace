@@ -282,6 +282,23 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.BASE64FORGE,
+    name: 'Base64Forge',
+    title: 'Base64Forge',
+    preview: algoVisualizerPreview, // Reuse preview for now
+    position: { x: -1500, y: 8000, z: 200, rotateY: -15 },
+    description:
+      'Base64 编码/解码工具：文本/文件编码 + 图片预览 + 一键复制',
+    descriptionEn:
+      'Base64 encoder/decoder: text/file encoding, image preview, one-click copy',
+    tech: ['React', 'Vite', 'Base64', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/base64-forge/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/base64-forge', text: 'Github', githubRepo: 'watermelontip/base64-forge' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData = [
@@ -302,5 +319,6 @@ export const mapData = [
   { id: SLIDE_IDS.GRIDFORGE, name: 'GridForge', icon: 'fas fa-th' },
   { id: SLIDE_IDS.JSONTOCSV, name: 'JsonToCSV', icon: 'fas fa-file-csv' },
   { id: SLIDE_IDS.YAMLFORGE, name: 'YamlForge', icon: 'fas fa-exchange-alt' },
+  { id: SLIDE_IDS.BASE64FORGE, name: 'Base64Forge', icon: 'fas fa-lock' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];

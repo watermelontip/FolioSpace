@@ -16,6 +16,7 @@ export const SLIDE_IDS = {
   GRIDFORGE: 'grid-forge',
   JSONTOCSV: 'json-to-csv',
   YAMLFORGE: 'yaml-forge',
+  BASE64FORGE: 'base64-forge',
   OVERVIEW: 'overview',
 } as const;
 
