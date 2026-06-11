@@ -479,6 +479,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.IMAGEGALLERY,
+    name: 'ImageGallery',
+    title: 'ImageGallery',
+    preview: algoVisualizerPreview,
+    position: { x: -5400, y: 18400, z: 200, rotateY: 15 },
+    description: '图片画廊：瀑布流布局 + 灯箱预览',
+    descriptionEn: 'Image gallery: waterfall layout, lightbox preview',
+    tech: ['React', 'Vite', 'Gallery', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/image-gallery/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/image-gallery', text: 'Github', githubRepo: 'watermelontip/image-gallery' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData
@@ -503,6 +518,7 @@ export const mapData
   { id: SLIDE_IDS.QUOTEGEN, name: 'QuoteGen', icon: 'fas fa-quote-left' },
   { id: SLIDE_IDS.LINKEXTRACT, name: 'LinkExtract', icon: 'fas fa-link' },
   { id: SLIDE_IDS.WORDCOUNTER, name: 'WordCounter', icon: 'fas fa-font' },
+  { id: SLIDE_IDS.IMAGEGALLERY, name: 'ImageGallery', icon: 'fas fa-images' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },

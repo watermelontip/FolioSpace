@@ -29,6 +29,7 @@ export const SLIDE_IDS = {
   QUOTEGEN: 'quote-gen',
   LINKEXTRACT: 'link-extract',
   WORDCOUNTER: 'word-counter',
+  IMAGEGALLERY: 'image-gallery',
   OVERVIEW: 'overview',
 } as const;
 
