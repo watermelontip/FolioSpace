@@ -28,6 +28,7 @@ export const SLIDE_IDS = {
   EMOJIPICKER: 'emoji-picker',
   QUOTEGEN: 'quote-gen',
   LINKEXTRACT: 'link-extract',
+  WORDCOUNTER: 'word-counter',
   OVERVIEW: 'overview',
 } as const;
 

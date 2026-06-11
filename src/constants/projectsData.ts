@@ -464,6 +464,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.WORDCOUNTER,
+    name: 'WordCounter',
+    title: 'WordCounter',
+    preview: algoVisualizerPreview,
+    position: { x: -5100, y: 17600, z: 200, rotateY: -10 },
+    description: '字数统计器：中英文统计 + 阅读时间 + 朗读时间',
+    descriptionEn: 'Word counter: Chinese/English stats, reading time, speaking time',
+    tech: ['React', 'Vite', 'Analytics', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/word-counter/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/word-counter', text: 'Github', githubRepo: 'watermelontip/word-counter' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData
@@ -487,6 +502,7 @@ export const mapData
   { id: SLIDE_IDS.EMOJIPICKER, name: 'EmojiPicker', icon: 'fas fa-smile' },
   { id: SLIDE_IDS.QUOTEGEN, name: 'QuoteGen', icon: 'fas fa-quote-left' },
   { id: SLIDE_IDS.LINKEXTRACT, name: 'LinkExtract', icon: 'fas fa-link' },
+  { id: SLIDE_IDS.WORDCOUNTER, name: 'WordCounter', icon: 'fas fa-font' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
