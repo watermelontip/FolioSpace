@@ -13,6 +13,7 @@ export const SLIDE_IDS = {
   JSONTOTS: 'json-to-ts',
   MARKPDF: 'markpdf',
   SCHEMAVIZ: 'schema-viz',
+  GRIDFORGE: 'grid-forge',
   OVERVIEW: 'overview',
 } as const;
 

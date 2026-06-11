@@ -231,6 +231,23 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.GRIDFORGE,
+    name: 'GridForge',
+    title: 'GridForge',
+    preview: algoVisualizerPreview, // Reuse preview for now
+    position: { x: -600, y: 5600, z: 200, rotateY: 15 },
+    description:
+      'CSS Grid 生成器：可视化编辑 + 实时预览 + 模板库 + 代码导出',
+    descriptionEn:
+      'CSS Grid generator: visual editing, real-time preview, template library, code export',
+    tech: ['React', 'Vite', 'CSS', 'Grid'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/grid-forge/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/grid-forge', text: 'Github', githubRepo: 'watermelontip/grid-forge' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData = [
@@ -248,5 +265,6 @@ export const mapData = [
   { id: SLIDE_IDS.JSONTOTS, name: 'JsonToTS', icon: 'fas fa-exchange-alt' },
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
+  { id: SLIDE_IDS.GRIDFORGE, name: 'GridForge', icon: 'fas fa-th' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];
