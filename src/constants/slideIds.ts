@@ -26,6 +26,7 @@ export const SLIDE_IDS = {
   JSONPRETTIFY: 'json-prettify',
   CHECKLIST: 'check-list',
   EMOJIPICKER: 'emoji-picker',
+  QUOTEGEN: 'quote-gen',
   OVERVIEW: 'overview',
 } as const;
 

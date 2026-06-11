@@ -434,6 +434,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.QUOTEGEN,
+    name: 'QuoteGen',
+    title: 'QuoteGen',
+    preview: algoVisualizerPreview,
+    position: { x: -4500, y: 16000, z: 200, rotateY: -15 },
+    description: '引言图片生成器：8 种主题 + 下载图片 + 复制文字',
+    descriptionEn: 'Quote image generator: 8 themes, download, copy text',
+    tech: ['React', 'Vite', 'Canvas', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/quote-gen/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/quote-gen', text: 'Github', githubRepo: 'watermelontip/quote-gen' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData
@@ -455,6 +470,7 @@ export const mapData
   { id: SLIDE_IDS.JSONPRETTIFY, name: 'JsonPrettify', icon: 'fas fa-magic' },
   { id: SLIDE_IDS.CHECKLIST, name: 'CheckList', icon: 'fas fa-check-square' },
   { id: SLIDE_IDS.EMOJIPICKER, name: 'EmojiPicker', icon: 'fas fa-smile' },
+  { id: SLIDE_IDS.QUOTEGEN, name: 'QuoteGen', icon: 'fas fa-quote-left' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
