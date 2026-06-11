@@ -569,6 +569,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.IPLOOKUP,
+    name: 'IpLookup',
+    title: 'IpLookup',
+    preview: algoVisualizerPreview,
+    position: { x: -7200, y: 23200, z: 200, rotateY: 15 },
+    description: 'IP 查询工具：地理位置 + 网络信息 + 地图链接',
+    descriptionEn: 'IP lookup: geolocation, network info, map link',
+    tech: ['React', 'Vite', 'API', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/ip-lookup/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/ip-lookup', text: 'Github', githubRepo: 'watermelontip/ip-lookup' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData
@@ -599,6 +614,7 @@ export const mapData
   { id: SLIDE_IDS.PASSWORDGEN, name: 'PasswordGen', icon: 'fas fa-key' },
   { id: SLIDE_IDS.UUIDGEN, name: 'UuidGen', icon: 'fas fa-fingerprint' },
   { id: SLIDE_IDS.TIMESTAMPCONVERT, name: 'TimestampConvert', icon: 'fas fa-clock' },
+  { id: SLIDE_IDS.IPLOOKUP, name: 'IpLookup', icon: 'fas fa-globe' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
