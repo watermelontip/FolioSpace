@@ -24,6 +24,7 @@ export const SLIDE_IDS = {
   MARKPREVIEW: 'mark-preview',
   REGEXLAB: 'regex-lab',
   JSONPRETTIFY: 'json-prettify',
+  CHECKLIST: 'check-list',
   OVERVIEW: 'overview',
 } as const;
 

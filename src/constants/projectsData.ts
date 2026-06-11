@@ -404,6 +404,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.CHECKLIST,
+    name: 'CheckList',
+    title: 'CheckList',
+    preview: algoVisualizerPreview,
+    position: { x: -3900, y: 14400, z: 200, rotateY: -20 },
+    description: 'Markdown 清单管理器：可视化任务管理 + 进度条 + 导出',
+    descriptionEn: 'Markdown checklist manager: visual task management, progress bar, export',
+    tech: ['React', 'Vite', 'Markdown', 'Todo'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/check-list/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/check-list', text: 'Github', githubRepo: 'watermelontip/check-list' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData
@@ -423,6 +438,7 @@ export const mapData
   { id: SLIDE_IDS.MARKPREVIEW, name: 'MarkPreview', icon: 'fas fa-eye' },
   { id: SLIDE_IDS.REGEXLAB, name: 'RegexLab', icon: 'fas fa-asterisk' },
   { id: SLIDE_IDS.JSONPRETTIFY, name: 'JsonPrettify', icon: 'fas fa-magic' },
+  { id: SLIDE_IDS.CHECKLIST, name: 'CheckList', icon: 'fas fa-check-square' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
