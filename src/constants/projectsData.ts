@@ -449,6 +449,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.LINKEXTRACT,
+    name: 'LinkExtract',
+    title: 'LinkExtract',
+    preview: algoVisualizerPreview,
+    position: { x: -4800, y: 16800, z: 200, rotateY: 20 },
+    description: '链接提取器：从文本提取 URL/邮箱/Markdown 链接',
+    descriptionEn: 'Link extractor: extract URLs, emails, Markdown links from text',
+    tech: ['React', 'Vite', 'Parser', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/link-extract/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/link-extract', text: 'Github', githubRepo: 'watermelontip/link-extract' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData
@@ -471,6 +486,7 @@ export const mapData
   { id: SLIDE_IDS.CHECKLIST, name: 'CheckList', icon: 'fas fa-check-square' },
   { id: SLIDE_IDS.EMOJIPICKER, name: 'EmojiPicker', icon: 'fas fa-smile' },
   { id: SLIDE_IDS.QUOTEGEN, name: 'QuoteGen', icon: 'fas fa-quote-left' },
+  { id: SLIDE_IDS.LINKEXTRACT, name: 'LinkExtract', icon: 'fas fa-link' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },

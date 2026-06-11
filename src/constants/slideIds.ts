@@ -27,6 +27,7 @@ export const SLIDE_IDS = {
   CHECKLIST: 'check-list',
   EMOJIPICKER: 'emoji-picker',
   QUOTEGEN: 'quote-gen',
+  LINKEXTRACT: 'link-extract',
   OVERVIEW: 'overview',
 } as const;
 
