@@ -48,6 +48,7 @@ export const SLIDE_IDS = {
   PLACEHOLDERIMG: 'placeholder-img',
   MARKEDITOR: 'mark-editor',
   CASECONVERT: 'case-convert',
+  TEXTREVERSE: 'text-reverse',
   OVERVIEW: 'overview',
 } as const;
 

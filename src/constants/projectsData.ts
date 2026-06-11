@@ -764,6 +764,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.TEXTREVERSE,
+    name: 'TextReverse',
+    title: 'TextReverse',
+    preview: algoVisualizerPreview,
+    position: { x: -11100, y: 33600, z: 200, rotateY: -20 },
+    description: '文本反转器：6 种反转方式 + 镜像文字',
+    descriptionEn: 'Text reversal: 6 modes, mirror text',
+    tech: ['React', 'Vite', 'Text', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/text-reverse/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/text-reverse', text: 'Github', githubRepo: 'watermelontip/text-reverse' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData
@@ -807,6 +822,7 @@ export const mapData
   { id: SLIDE_IDS.PLACEHOLDERIMG, name: 'PlaceholderImg', icon: 'fas fa-image' },
   { id: SLIDE_IDS.MARKEDITOR, name: 'MarkEditor', icon: 'fas fa-edit' },
   { id: SLIDE_IDS.CASECONVERT, name: 'CaseConvert', icon: 'fas fa-font' },
+  { id: SLIDE_IDS.TEXTREVERSE, name: 'TextReverse', icon: 'fas fa-exchange-alt' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
