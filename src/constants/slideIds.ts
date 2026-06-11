@@ -31,6 +31,7 @@ export const SLIDE_IDS = {
   WORDCOUNTER: 'word-counter',
   IMAGEGALLERY: 'image-gallery',
   CODEHIGHLIGHT: 'code-highlight',
+  TASKBOARD: 'task-board',
   OVERVIEW: 'overview',
 } as const;
 

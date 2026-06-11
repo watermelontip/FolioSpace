@@ -509,6 +509,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.TASKBOARD,
+    name: 'TaskBoard',
+    title: 'TaskBoard',
+    preview: algoVisualizerPreview,
+    position: { x: -6000, y: 20000, z: 200, rotateY: 10 },
+    description: '看板任务板：拖拽式任务管理 + 优先级 + 状态流转',
+    descriptionEn: 'Kanban task board: drag-drop, priority, status flow',
+    tech: ['React', 'Vite', 'Kanban', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/task-board/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/task-board', text: 'Github', githubRepo: 'watermelontip/task-board' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData
@@ -535,6 +550,7 @@ export const mapData
   { id: SLIDE_IDS.WORDCOUNTER, name: 'WordCounter', icon: 'fas fa-font' },
   { id: SLIDE_IDS.IMAGEGALLERY, name: 'ImageGallery', icon: 'fas fa-images' },
   { id: SLIDE_IDS.CODEHIGHLIGHT, name: 'CodeHighlight', icon: 'fas fa-code' },
+  { id: SLIDE_IDS.TASKBOARD, name: 'TaskBoard', icon: 'fas fa-columns' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
