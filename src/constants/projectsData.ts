@@ -779,6 +779,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.TEXTSTATS,
+    name: 'TextStats',
+    title: 'TextStats',
+    preview: algoVisualizerPreview,
+    position: { x: -11400, y: 34400, z: 200, rotateY: 10 },
+    description: '文本统计器：详细分析 + 高频词汇 + 阅读时间',
+    descriptionEn: 'Text stats: detailed analysis, word frequency, reading time',
+    tech: ['React', 'Vite', 'Analytics', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/text-stats/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/text-stats', text: 'Github', githubRepo: 'watermelontip/text-stats' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData
@@ -823,6 +838,7 @@ export const mapData
   { id: SLIDE_IDS.MARKEDITOR, name: 'MarkEditor', icon: 'fas fa-edit' },
   { id: SLIDE_IDS.CASECONVERT, name: 'CaseConvert', icon: 'fas fa-font' },
   { id: SLIDE_IDS.TEXTREVERSE, name: 'TextReverse', icon: 'fas fa-exchange-alt' },
+  { id: SLIDE_IDS.TEXTSTATS, name: 'TextStats', icon: 'fas fa-chart-bar' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
