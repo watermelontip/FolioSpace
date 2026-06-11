@@ -45,6 +45,7 @@ export const SLIDE_IDS = {
   PALETTEGEN: 'palette-gen',
   CSVTOTABLE: 'csv-to-table',
   LINECOUNTER: 'line-counter',
+  PLACEHOLDERIMG: 'placeholder-img',
   OVERVIEW: 'overview',
 } as const;
 

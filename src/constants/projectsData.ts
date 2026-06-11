@@ -719,6 +719,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.PLACEHOLDERIMG,
+    name: 'PlaceholderImg',
+    title: 'PlaceholderImg',
+    preview: algoVisualizerPreview,
+    position: { x: -10200, y: 31200, z: 200, rotateY: 20 },
+    description: '占位图生成器：自定义尺寸/颜色/文字 + Canvas 生成',
+    descriptionEn: 'Placeholder image generator: custom size, color, text, Canvas',
+    tech: ['React', 'Vite', 'Canvas', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/placeholder-img/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/placeholder-img', text: 'Github', githubRepo: 'watermelontip/placeholder-img' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData
@@ -759,6 +774,7 @@ export const mapData
   { id: SLIDE_IDS.PALETTEGEN, name: 'PaletteGen', icon: 'fas fa-palette' },
   { id: SLIDE_IDS.CSVTOTABLE, name: 'CsvToTable', icon: 'fas fa-table' },
   { id: SLIDE_IDS.LINECOUNTER, name: 'LineCounter', icon: 'fas fa-list-ol' },
+  { id: SLIDE_IDS.PLACEHOLDERIMG, name: 'PlaceholderImg', icon: 'fas fa-image' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
