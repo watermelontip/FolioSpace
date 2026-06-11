@@ -299,9 +299,24 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.URLFORGE,
+    name: 'UrlForge',
+    title: 'UrlForge',
+    preview: algoVisualizerPreview,
+    position: { x: -1800, y: 8800, z: 200, rotateY: 20 },
+    description: 'URL 编码/解码工具：双向转换 + URL 解析 + 查询参数解析',
+    descriptionEn: 'URL encoder/decoder: bidirectional conversion, URL parsing, query parameter parsing',
+    tech: ['React', 'Vite', 'URL', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/url-forge/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/url-forge', text: 'Github', githubRepo: 'watermelontip/url-forge' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
-export const mapData = [
+export const mapData
   { id: SLIDE_IDS.TITLE, name: 'Introduction', icon: 'fas fa-home' },
   { id: SLIDE_IDS.ALGO_VISUALIZER, name: 'Algo Visualizer', icon: 'fas fa-project-diagram' },
   { id: SLIDE_IDS.CODE_FLOWCHART, name: 'Code Flowchart', icon: 'fas fa-sitemap' },

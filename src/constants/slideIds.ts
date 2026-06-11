@@ -17,6 +17,7 @@ export const SLIDE_IDS = {
   JSONTOCSV: 'json-to-csv',
   YAMLFORGE: 'yaml-forge',
   BASE64FORGE: 'base64-forge',
+  URLFORGE: 'url-forge',
   OVERVIEW: 'overview',
 } as const;
 
