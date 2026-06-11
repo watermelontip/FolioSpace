@@ -644,6 +644,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.BASECONVERT,
+    name: 'BaseConvert',
+    title: 'BaseConvert',
+    preview: algoVisualizerPreview,
+    position: { x: -8700, y: 27200, z: 200, rotateY: -10 },
+    description: '进制转换器：二进制/八进制/十进制/十六进制互转',
+    descriptionEn: 'Number base converter: binary/octal/decimal/hex',
+    tech: ['React', 'Vite', 'Math', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/base-convert/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/base-convert', text: 'Github', githubRepo: 'watermelontip/base-convert' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData
@@ -679,6 +694,7 @@ export const mapData
   { id: SLIDE_IDS.MARKDOWNCHEAT, name: 'MarkdownCheat', icon: 'fas fa-book' },
   { id: SLIDE_IDS.CSSUNITS, name: 'CssUnits', icon: 'fas fa-ruler' },
   { id: SLIDE_IDS.HTMLENCODE, name: 'HtmlEncode', icon: 'fas fa-code' },
+  { id: SLIDE_IDS.BASECONVERT, name: 'BaseConvert', icon: 'fas fa-calculator' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },

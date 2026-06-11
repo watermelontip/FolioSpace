@@ -40,6 +40,7 @@ export const SLIDE_IDS = {
   MARKDOWNCHEAT: 'markdown-cheat',
   CSSUNITS: 'css-units',
   HTMLENCODE: 'html-encode',
+  BASECONVERT: 'base-convert',
   OVERVIEW: 'overview',
 } as const;
 
