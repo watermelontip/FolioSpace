@@ -22,6 +22,7 @@ export const SLIDE_IDS = {
   TABLEFORGE: 'table-forge',
   JSONDIFF: 'json-diff',
   MARKPREVIEW: 'mark-preview',
+  REGEXLAB: 'regex-lab',
   OVERVIEW: 'overview',
 } as const;
 

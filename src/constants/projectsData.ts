@@ -374,6 +374,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.REGEXLAB,
+    name: 'RegexLab',
+    title: 'RegexLab',
+    preview: algoVisualizerPreview,
+    position: { x: -3300, y: 12800, z: 200, rotateY: -15 },
+    description: '正则表达式测试器：实时匹配 + 高亮显示 + 常用模式库',
+    descriptionEn: 'Regex tester: real-time matching, highlighting, common patterns',
+    tech: ['React', 'Vite', 'Regex', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/regex-lab/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/regex-lab', text: 'Github', githubRepo: 'watermelontip/regex-lab' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData
@@ -391,6 +406,7 @@ export const mapData
   { id: SLIDE_IDS.TABLEFORGE, name: 'TableForge', icon: 'fas fa-table' },
   { id: SLIDE_IDS.JSONDIFF, name: 'JsonDiff', icon: 'fas fa-code-branch' },
   { id: SLIDE_IDS.MARKPREVIEW, name: 'MarkPreview', icon: 'fas fa-eye' },
+  { id: SLIDE_IDS.REGEXLAB, name: 'RegexLab', icon: 'fas fa-asterisk' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
