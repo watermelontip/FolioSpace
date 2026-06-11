@@ -11,6 +11,7 @@ export const SLIDE_IDS = {
   TOKENSCOPE: 'tokenscope',
   CRONCRAFT: 'croncraft',
   JSONTOTS: 'json-to-ts',
+  MARKPDF: 'markpdf',
   OVERVIEW: 'overview',
 } as const;
 

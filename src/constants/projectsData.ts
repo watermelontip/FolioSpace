@@ -197,6 +197,23 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.MARKPDF,
+    name: 'MarkPDF',
+    title: 'MarkPDF',
+    preview: algoVisualizerPreview, // Reuse preview for now
+    position: { x: 0, y: 4000, z: 200, rotateY: 10 },
+    description:
+      'Markdown 转 PDF 工具：实时预览 + 多种主题 + 一键导出',
+    descriptionEn:
+      'Markdown to PDF converter: real-time preview, multiple themes, one-click export',
+    tech: ['React', 'Vite', 'Markdown', 'PDF'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/markpdf/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/markpdf', text: 'Github', githubRepo: 'watermelontip/markpdf' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData = [
@@ -212,5 +229,6 @@ export const mapData = [
   { id: SLIDE_IDS.TOKENSCOPE, name: 'TokenScope', icon: 'fas fa-coins' },
   { id: SLIDE_IDS.CRONCRAFT, name: 'CronCraft', icon: 'fas fa-clock' },
   { id: SLIDE_IDS.JSONTOTS, name: 'JsonToTS', icon: 'fas fa-exchange-alt' },
+  { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];
