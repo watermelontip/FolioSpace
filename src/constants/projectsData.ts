@@ -359,6 +359,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.MARKPREVIEW,
+    name: 'MarkPreview',
+    title: 'MarkPreview',
+    preview: algoVisualizerPreview,
+    position: { x: -3000, y: 12000, z: 200, rotateY: 20 },
+    description: 'Markdown 实时预览器：边写边看 + 分屏视图',
+    descriptionEn: 'Markdown real-time previewer: split-pane view with live rendering',
+    tech: ['React', 'Vite', 'Markdown', 'Preview'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/mark-preview/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/mark-preview', text: 'Github', githubRepo: 'watermelontip/mark-preview' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData
@@ -375,6 +390,7 @@ export const mapData
   { id: SLIDE_IDS.COLORCONVERT, name: 'ColorConvert', icon: 'fas fa-palette' },
   { id: SLIDE_IDS.TABLEFORGE, name: 'TableForge', icon: 'fas fa-table' },
   { id: SLIDE_IDS.JSONDIFF, name: 'JsonDiff', icon: 'fas fa-code-branch' },
+  { id: SLIDE_IDS.MARKPREVIEW, name: 'MarkPreview', icon: 'fas fa-eye' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },

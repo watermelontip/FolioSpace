@@ -21,6 +21,7 @@ export const SLIDE_IDS = {
   COLORCONVERT: 'color-convert',
   TABLEFORGE: 'table-forge',
   JSONDIFF: 'json-diff',
+  MARKPREVIEW: 'mark-preview',
   OVERVIEW: 'overview',
 } as const;
 
