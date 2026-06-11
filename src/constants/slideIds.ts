@@ -19,6 +19,7 @@ export const SLIDE_IDS = {
   BASE64FORGE: 'base64-forge',
   URLFORGE: 'url-forge',
   COLORCONVERT: 'color-convert',
+  TABLEFORGE: 'table-forge',
   OVERVIEW: 'overview',
 } as const;
 

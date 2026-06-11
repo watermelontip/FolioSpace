@@ -329,6 +329,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.TABLEFORGE,
+    name: 'TableForge',
+    title: 'TableForge',
+    preview: algoVisualizerPreview,
+    position: { x: -2400, y: 10400, z: 200, rotateY: 15 },
+    description: 'Markdown 表格生成器：可视化编辑 + 实时预览 + 对齐控制',
+    descriptionEn: 'Markdown table generator: visual editor, real-time preview, alignment control',
+    tech: ['React', 'Vite', 'Markdown', 'Table'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/table-forge/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/table-forge', text: 'Github', githubRepo: 'watermelontip/table-forge' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData
@@ -342,8 +357,9 @@ export const mapData
   { id: SLIDE_IDS.KAWAII_THEME, name: 'Kawaii Theme', icon: 'fas fa-palette' },
   { id: SLIDE_IDS.TOOLS_PORTAL, name: 'Tools Portal', icon: 'fas fa-tools' },
   { id: SLIDE_IDS.TOKENSCOPE, name: 'TokenScope', icon: 'fas fa-coins' },
-  { id: SLIDE_IDS.CRONCRAFT, name: 'CronCraft', icon: 'fas fa-clock' },
-  { id: SLIDE_IDS.JSONTOTS, name: 'JsonToTS', icon: 'fas fa-exchange-alt' },
+  { id: SLIDE_IDS.COLORCONVERT, name: 'ColorConvert', icon: 'fas fa-palette' },
+  { id: SLIDE_IDS.TABLEFORGE, name: 'TableForge', icon: 'fas fa-table' },
+  { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
   { id: SLIDE_IDS.GRIDFORGE, name: 'GridForge', icon: 'fas fa-th' },
