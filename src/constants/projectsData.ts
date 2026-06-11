@@ -749,6 +749,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.CASECONVERT,
+    name: 'CaseConvert',
+    title: 'CaseConvert',
+    preview: algoVisualizerPreview,
+    position: { x: -10800, y: 32800, z: 200, rotateY: 15 },
+    description: '大小写转换器：10 种格式互转',
+    descriptionEn: 'Text case converter: 10 formats',
+    tech: ['React', 'Vite', 'Text', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/case-convert/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/case-convert', text: 'Github', githubRepo: 'watermelontip/case-convert' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData
@@ -791,6 +806,7 @@ export const mapData
   { id: SLIDE_IDS.LINECOUNTER, name: 'LineCounter', icon: 'fas fa-list-ol' },
   { id: SLIDE_IDS.PLACEHOLDERIMG, name: 'PlaceholderImg', icon: 'fas fa-image' },
   { id: SLIDE_IDS.MARKEDITOR, name: 'MarkEditor', icon: 'fas fa-edit' },
+  { id: SLIDE_IDS.CASECONVERT, name: 'CaseConvert', icon: 'fas fa-font' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },

@@ -47,6 +47,7 @@ export const SLIDE_IDS = {
   LINECOUNTER: 'line-counter',
   PLACEHOLDERIMG: 'placeholder-img',
   MARKEDITOR: 'mark-editor',
+  CASECONVERT: 'case-convert',
   OVERVIEW: 'overview',
 } as const;
 
