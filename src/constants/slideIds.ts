@@ -33,6 +33,7 @@ export const SLIDE_IDS = {
   CODEHIGHLIGHT: 'code-highlight',
   TASKBOARD: 'task-board',
   PASSWORDGEN: 'password-gen',
+  UUIDGEN: 'uuid-gen',
   OVERVIEW: 'overview',
 } as const;
 

@@ -539,6 +539,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.UUIDGEN,
+    name: 'UuidGen',
+    title: 'UuidGen',
+    preview: algoVisualizerPreview,
+    position: { x: -6600, y: 21600, z: 200, rotateY: 20 },
+    description: 'UUID 生成器：批量生成 UUID/NanoID/ULID',
+    descriptionEn: 'UUID generator: batch generate UUID, NanoID, ULID',
+    tech: ['React', 'Vite', 'UUID', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/uuid-gen/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/uuid-gen', text: 'Github', githubRepo: 'watermelontip/uuid-gen' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData
@@ -567,6 +582,7 @@ export const mapData
   { id: SLIDE_IDS.CODEHIGHLIGHT, name: 'CodeHighlight', icon: 'fas fa-code' },
   { id: SLIDE_IDS.TASKBOARD, name: 'TaskBoard', icon: 'fas fa-columns' },
   { id: SLIDE_IDS.PASSWORDGEN, name: 'PasswordGen', icon: 'fas fa-key' },
+  { id: SLIDE_IDS.UUIDGEN, name: 'UuidGen', icon: 'fas fa-fingerprint' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
