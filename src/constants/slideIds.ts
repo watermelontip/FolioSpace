@@ -46,6 +46,7 @@ export const SLIDE_IDS = {
   CSVTOTABLE: 'csv-to-table',
   LINECOUNTER: 'line-counter',
   PLACEHOLDERIMG: 'placeholder-img',
+  MARKEDITOR: 'mark-editor',
   OVERVIEW: 'overview',
 } as const;
 

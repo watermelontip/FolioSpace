@@ -734,6 +734,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.MARKEDITOR,
+    name: 'MarkEditor',
+    title: 'MarkEditor',
+    preview: algoVisualizerPreview,
+    position: { x: -10500, y: 32000, z: 200, rotateY: -10 },
+    description: 'Markdown 编辑器：实时预览 + 工具栏 + 字数统计',
+    descriptionEn: 'Markdown editor: live preview, toolbar, word count',
+    tech: ['React', 'Vite', 'Markdown', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/mark-editor/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/mark-editor', text: 'Github', githubRepo: 'watermelontip/mark-editor' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData
@@ -775,6 +790,7 @@ export const mapData
   { id: SLIDE_IDS.CSVTOTABLE, name: 'CsvToTable', icon: 'fas fa-table' },
   { id: SLIDE_IDS.LINECOUNTER, name: 'LineCounter', icon: 'fas fa-list-ol' },
   { id: SLIDE_IDS.PLACEHOLDERIMG, name: 'PlaceholderImg', icon: 'fas fa-image' },
+  { id: SLIDE_IDS.MARKEDITOR, name: 'MarkEditor', icon: 'fas fa-edit' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
