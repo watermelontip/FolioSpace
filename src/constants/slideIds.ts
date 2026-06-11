@@ -50,6 +50,7 @@ export const SLIDE_IDS = {
   CASECONVERT: 'case-convert',
   TEXTREVERSE: 'text-reverse',
   TEXTSTATS: 'text-stats',
+  TEXTCOMPARE: 'text-compare',
   OVERVIEW: 'overview',
 } as const;
 

@@ -794,6 +794,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.TEXTCOMPARE,
+    name: 'TextCompare',
+    title: 'TextCompare',
+    preview: algoVisualizerPreview,
+    position: { x: -11700, y: 35200, z: 200, rotateY: -15 },
+    description: '文本对比工具：并排差异 + LCS 算法',
+    descriptionEn: 'Text comparison: side-by-side diff, LCS algorithm',
+    tech: ['React', 'Vite', 'Diff', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/text-compare/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/text-compare', text: 'Github', githubRepo: 'watermelontip/text-compare' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData
@@ -839,6 +854,7 @@ export const mapData
   { id: SLIDE_IDS.CASECONVERT, name: 'CaseConvert', icon: 'fas fa-font' },
   { id: SLIDE_IDS.TEXTREVERSE, name: 'TextReverse', icon: 'fas fa-exchange-alt' },
   { id: SLIDE_IDS.TEXTSTATS, name: 'TextStats', icon: 'fas fa-chart-bar' },
+  { id: SLIDE_IDS.TEXTCOMPARE, name: 'TextCompare', icon: 'fas fa-columns' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
