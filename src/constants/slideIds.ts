@@ -14,6 +14,7 @@ export const SLIDE_IDS = {
   MARKPDF: 'markpdf',
   SCHEMAVIZ: 'schema-viz',
   GRIDFORGE: 'grid-forge',
+  JSONTOCSV: 'json-to-csv',
   OVERVIEW: 'overview',
 } as const;
 

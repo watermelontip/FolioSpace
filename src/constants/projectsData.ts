@@ -248,6 +248,23 @@ export const projectsData: Project[] = [
     ],
     layout: 'reverse',
   },
+  {
+    id: SLIDE_IDS.JSONTOCSV,
+    name: 'JsonToCSV',
+    title: 'JsonToCSV',
+    preview: algoVisualizerPreview, // Reuse preview for now
+    position: { x: -900, y: 6400, z: 200, rotateY: -20 },
+    description:
+      'JSON 转 CSV 工具：实时转换 + 嵌套支持 + 自定义选项 + 下载导出',
+    descriptionEn:
+      'JSON to CSV converter: real-time conversion, nested support, custom options, download export',
+    tech: ['React', 'Vite', 'JSON', 'CSV'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/json-to-csv/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/json-to-csv', text: 'Github', githubRepo: 'watermelontip/json-to-csv' },
+    ],
+    layout: 'standard',
+  },
 ];
 
 export const mapData = [
@@ -266,5 +283,6 @@ export const mapData = [
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
   { id: SLIDE_IDS.GRIDFORGE, name: 'GridForge', icon: 'fas fa-th' },
+  { id: SLIDE_IDS.JSONTOCSV, name: 'JsonToCSV', icon: 'fas fa-file-csv' },
   { id: SLIDE_IDS.OVERVIEW, name: 'Overview', icon: 'fas fa-th-large' },
 ];
