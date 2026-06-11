@@ -43,6 +43,7 @@ export const SLIDE_IDS = {
   BASECONVERT: 'base-convert',
   TEXTDIFF: 'text-diff',
   PALETTEGEN: 'palette-gen',
+  CSVTOTABLE: 'csv-to-table',
   OVERVIEW: 'overview',
 } as const;
 

@@ -689,6 +689,21 @@ export const projectsData: Project[] = [
     ],
     layout: 'standard',
   },
+  {
+    id: SLIDE_IDS.CSVTOTABLE,
+    name: 'CsvToTable',
+    title: 'CsvToTable',
+    preview: algoVisualizerPreview,
+    position: { x: -9600, y: 29600, z: 200, rotateY: 10 },
+    description: 'CSV 转表格工具：CSV 转 Markdown/HTML 表格',
+    descriptionEn: 'CSV to table converter: CSV to Markdown/HTML tables',
+    tech: ['React', 'Vite', 'CSV', 'Tool'],
+    links: [
+      { type: 'demo', url: 'https://watermelontip.github.io/csv-to-table/', text: 'Live Demo' },
+      { type: 'code', url: 'https://github.com/watermelontip/csv-to-table', text: 'Github', githubRepo: 'watermelontip/csv-to-table' },
+    ],
+    layout: 'reverse',
+  },
 ];
 
 export const mapData
@@ -727,6 +742,7 @@ export const mapData
   { id: SLIDE_IDS.BASECONVERT, name: 'BaseConvert', icon: 'fas fa-calculator' },
   { id: SLIDE_IDS.TEXTDIFF, name: 'TextDiff', icon: 'fas fa-exchange-alt' },
   { id: SLIDE_IDS.PALETTEGEN, name: 'PaletteGen', icon: 'fas fa-palette' },
+  { id: SLIDE_IDS.CSVTOTABLE, name: 'CsvToTable', icon: 'fas fa-table' },
   { id: SLIDE_IDS.OVERVIEW
   { id: SLIDE_IDS.MARKPDF, name: 'MarkPDF', icon: 'fas fa-file-pdf' },
   { id: SLIDE_IDS.SCHEMAVIZ, name: 'SchemaViz', icon: 'fas fa-sitemap' },
