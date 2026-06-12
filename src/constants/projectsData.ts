@@ -1,872 +1,149 @@
-1|import netToolboxPreview from '../assets/net-toolbox.mp4';
-2|import kawaiiThemePreview from '../assets/kawaii-theme.mp4';
-3|import toolsPortalPreview from '../assets/tools-portal.mp4';
-4|import codeFlowchartPreview from '../assets/code-flowchart.mp4';
-5|import particleLabPreview from '../assets/particle-lab.mp4';
-6|import roughChartPreview from '../assets/rough-chart.mp4';
-7|import towerGamePreview from '../assets/tower-game.mp4';
-8|import algoVisualizerPreview from '../assets/algo-visualizer.mp4';
-9|import { Project } from '../types/project';
-10|import { SLIDE_IDS } from './slideIds';
-11|
-12|export const projectsData: Project[] = [
-13|  {
-14|    id: SLIDE_IDS.ALGO_VISUALIZER,
-15|    name: 'Algo Visualizer',
-16|    title: 'Algo Visualizer',
-17|    preview: algoVisualizerPreview,
-18|    position: { x: 1500, y: 0, z: 0, rotateY: 0 },
-19|    description:
-20|      '交互式算法可视化工具：支持排序算法和路径查找算法的动态演示与教学',
-21|    descriptionEn:
-22|      'Interactive algorithm visualization tool with sorting and pathfinding animations',
-23|    tech: ['Algorithm', 'Canvas', 'Visualization', 'Education'],
-24|    links: [
-25|      { type: 'demo', url: 'https://watermelontip.github.io/algo-visualizer/', text: 'Live Demo' },
-26|      { type: 'code', url: 'https://github.com/watermelontip/algo-visualizer', text: 'Github', githubRepo: 'watermelontip/algo-visualizer' },
-27|    ],
-28|    layout: 'standard',
-29|  },
-30|  {
-31|    id: SLIDE_IDS.CODE_FLOWCHART,
-32|    name: 'Code Flowchart',
-33|    title: 'Code Flowchart',
-34|    preview: codeFlowchartPreview,
-35|    position: { x: 1200, y: 800, z: 200, rotateY: 30 },
-36|    description:
-37|      '代码转流程图工具：将代码自动解析并生成可视化的 SVG 流程图',
-38|    descriptionEn:
-39|      'Convert code into visual SVG flowcharts automatically',
-40|    tech: ['Parser', 'SVG', 'Code', 'Tool'],
-41|    links: [
-42|      { type: 'demo', url: 'https://watermelontip.github.io/code-flowchart/', text: 'Live Demo' },
-43|      { type: 'code', url: 'https://github.com/watermelontip/code-flowchart', text: 'Github', githubRepo: 'watermelontip/code-flowchart' },
-44|    ],
-45|    layout: 'reverse',
-46|  },
-47|  {
-48|    id: SLIDE_IDS.PARTICLE_LAB,
-49|    name: 'Particle Lab',
-50|    title: 'Particle Lab',
-51|    preview: particleLabPreview,
-52|    position: { x: 0, y: 1500, z: 400, rotateY: 90 },
-53|    description:
-54|      '交互式粒子特效生成器：自由调节参数，实时预览各种酷炫粒子动画效果',
-55|    descriptionEn:
-56|      'Interactive particle effect generator with real-time parameter tuning',
-57|    tech: ['Canvas', 'Animation', 'Particle', 'Creative'],
-58|    links: [
-59|      { type: 'demo', url: 'https://watermelontip.github.io/particle-lab/', text: 'Live Demo' },
-60|      { type: 'code', url: 'https://github.com/watermelontip/particle-lab', text: 'Github', githubRepo: 'watermelontip/particle-lab' },
-61|    ],
-62|    layout: 'standard',
-63|  },
-64|  {
-65|    id: SLIDE_IDS.ROUGH_CHART,
-66|    name: 'Rough Chart',
-67|    title: 'Rough Chart',
-68|    preview: roughChartPreview,
-69|    position: { x: -1060, y: 1060, z: 600, rotateY: 135 },
-70|    description:
-71|      '手绘风格图表生成器：基于 RoughViz，生成具有手绘质感的数据可视化图表',
-72|    descriptionEn:
-73|      'Hand-drawn style chart generator based on RoughViz',
-74|    tech: ['Chart', 'RoughViz', 'SVG', 'Data Viz'],
-75|    links: [
-76|      { type: 'demo', url: 'https://watermelontip.github.io/rough-chart/', text: 'Live Demo' },
-77|      { type: 'code', url: 'https://github.com/watermelontip/rough-chart', text: 'Github', githubRepo: 'watermelontip/rough-chart' },
-78|    ],
-79|    layout: 'reverse',
-80|  },
-81|  {
-82|    id: SLIDE_IDS.TOWER_GAME,
-83|    name: 'Tower Game',
-84|    title: 'Tower Game',
-85|    preview: towerGamePreview,
-86|    position: { x: -1500, y: 0, z: 800, rotateY: 180 },
-87|    description:
-88|      '堆塔小游戏：经典的堆叠方块游戏，考验你的反应和节奏感',
-89|    descriptionEn:
-90|      'Classic tower stacking game testing your timing and rhythm',
-91|    tech: ['Game', 'Canvas', 'Animation', 'Casual'],
-92|    links: [
-93|      { type: 'demo', url: 'https://watermelontip.github.io/tower-game/', text: 'Live Demo' },
-94|      { type: 'code', url: 'https://github.com/watermelontip/tower-game', text: 'Github', githubRepo: 'watermelontip/tower-game' },
-95|    ],
-96|    layout: 'standard',
-97|  },
-98|  {
-99|    id: SLIDE_IDS.NET_TOOLBOX,
-100|    name: 'Net Toolbox',
-101|    title: 'Net Toolbox',
-102|    preview: netToolboxPreview,
-103|    position: { x: -1060, y: -1060, z: 1000, rotateY: 225 },
-104|    description:
-105|      '综合网络工具箱：IP 查询、延迟测试、DNS 查询、Whois、SSL 检测等 8 大功能',
-106|    descriptionEn:
-107|      'Comprehensive network toolbox: IP lookup, latency test, DNS, Whois, SSL detection and more',
-108|    tech: ['Network', 'Vue', 'API', 'Tool'],
-109|    links: [
-110|      { type: 'demo', url: 'https://watermelontip.github.io/net-toolbox/', text: 'Live Demo' },
-111|      { type: 'code', url: 'https://github.com/watermelontip/net-toolbox', text: 'Github', githubRepo: 'watermelontip/net-toolbox' },
-112|    ],
-113|    layout: 'reverse',
-114|  },
-115|  {
-116|    id: SLIDE_IDS.KAWAII_THEME,
-117|    name: 'Kawaii AI Theme Engine',
-118|    title: 'Kawaii AI Theme Engine',
-119|    preview: kawaiiThemePreview,
-120|    position: { x: 0, y: -1500, z: 1200, rotateY: 270 },
-121|    description:
-122|      '基于随机化的 AI 卡哇伊风格主题生成引擎，每次生成独一无二的可爱主题',
-123|    descriptionEn:
-124|      'Randomization-based AI kawaii-style theme generation engine',
-125|    tech: ['AI', 'CSS', 'Theme', 'Generator'],
-126|    links: [
-127|      { type: 'demo', url: 'https://watermelontip.github.io/Kawaii-AI-Theme-Engine/', text: 'Live Demo' },
-128|      { type: 'code', url: 'https://github.com/watermelontip/Kawaii-AI-Theme-Engine', text: 'Github', githubRepo: 'watermelontip/Kawaii-AI-Theme-Engine' },
-129|    ],
-130|    layout: 'standard',
-131|  },
-132|  {
-133|    id: SLIDE_IDS.TOOLS_PORTAL,
-134|    name: 'Tools Portal',
-135|    title: 'Tools Portal',
-136|    preview: toolsPortalPreview,
-137|    position: { x: 1060, y: -1060, z: 1400, rotateY: 315 },
-138|    description:
-139|      '免费在线开发者工具箱：JSON 格式化、Base64、颜色转换、正则测试、QR 码、渐变生成等 21 个工具',
-140|    descriptionEn:
-141|      'Free online developer toolbox: JSON, Base64, color converter, regex, QR code, gradient generator and 21 tools',
-142|    tech: ['Vue', 'CDN', 'Tools', 'Static'],
-143|    links: [
-144|      { type: 'demo', url: 'https://watermelontip.github.io/tools-portal-cdn/', text: 'Live Demo' },
-145|      { type: 'code', url: 'https://github.com/watermelontip/tools-portal-cdn', text: 'Github', githubRepo: 'watermelontip/tools-portal-cdn' },
-146|    ],
-147|    layout: 'reverse',
-148|  },
-149|  {
-150|    id: SLIDE_IDS.TOKENSCOPE,
-151|    name: 'TokenScope',
-152|    title: 'TokenScope',
-153|    preview: algoVisualizerPreview, // Reuse preview for now
-154|    position: { x: 900, y: 1600, z: 200, rotateY: -20 },
-155|    description:
-156|      'AI Token 可视化工具：实时 token 计数 + 多模型成本对比 + 视觉热力图 + 优化建议',
-157|    descriptionEn:
-158|      'AI Token visualization: real-time counting, multi-model cost comparison, visual heatmap, optimization tips',
-159|    tech: ['React', 'Vite', 'AI', 'Token'],
-160|    links: [
-161|      { type: 'demo', url: 'https://watermelontip.github.io/tokenscope/', text: 'Live Demo' },
-162|      { type: 'code', url: 'https://github.com/watermelontip/tokenscope', text: 'Github', githubRepo: 'watermelontip/tokenscope' },
-163|    ],
-164|    layout: 'standard',
-165|  },
-166|  {
-167|    id: SLIDE_IDS.CRONCRAFT,
-168|    name: 'CronCraft',
-169|    title: 'CronCraft',
-170|    preview: algoVisualizerPreview, // Reuse preview for now
-171|    position: { x: 600, y: 2400, z: 200, rotateY: 20 },
-172|    description:
-173|      '可视化 Cron 表达式编辑器：实时预览执行计划 + 20+ 预设模板 + 中文描述',
-174|    descriptionEn:
-175|      'Visual Cron expression editor: real-time execution preview, 20+ presets, Chinese support',
-176|    tech: ['React', 'Vite', 'Cron', 'Tool'],
-177|    links: [
-178|      { type: 'demo', url: 'https://watermelontip.github.io/croncraft/', text: 'Live Demo' },
-179|      { type: 'code', url: 'https://github.com/watermelontip/croncraft', text: 'Github', githubRepo: 'watermelontip/croncraft' },
-180|    ],
-181|    layout: 'reverse',
-182|  },
-183|  {
-184|    id: SLIDE_IDS.JSONTOTS,
-185|    name: 'JsonToTS',
-186|    title: 'JsonToTS',
-187|    preview: algoVisualizerPreview, // Reuse preview for now
-188|    position: { x: 300, y: 3200, z: 200, rotateY: -15 },
-189|    description:
-190|      'JSON 转 TypeScript 工具：实时转换 + 嵌套支持 + 自定义选项',
-191|    descriptionEn:
-192|      'JSON to TypeScript converter: real-time conversion, nested support, customizable options',
-193|    tech: ['React', 'Vite', 'TypeScript', 'Tool'],
-194|    links: [
-195|      { type: 'demo', url: 'https://watermelontip.github.io/json-to-ts/', text: 'Live Demo' },
-196|      { type: 'code', url: 'https://github.com/watermelontip/json-to-ts', text: 'Github', githubRepo: 'watermelontip/json-to-ts' },
-197|    ],
-198|    layout: 'standard',
-199|  },
-200|  {
-201|    id: SLIDE_IDS.MARKPDF,
-202|    name: 'MarkPDF',
-203|    title: 'MarkPDF',
-204|    preview: algoVisualizerPreview, // Reuse preview for now
-205|    position: { x: 0, y: 4000, z: 200, rotateY: 10 },
-206|    description:
-207|      'Markdown 转 PDF 工具：实时预览 + 多种主题 + 一键导出',
-208|    descriptionEn:
-209|      'Markdown to PDF converter: real-time preview, multiple themes, one-click export',
-210|    tech: ['React', 'Vite', 'Markdown', 'PDF'],
-211|    links: [
-212|      { type: 'demo', url: 'https://watermelontip.github.io/markpdf/', text: 'Live Demo' },
-213|      { type: 'code', url: 'https://github.com/watermelontip/markpdf', text: 'Github', githubRepo: 'watermelontip/markpdf' },
-214|    ],
-215|    layout: 'reverse',
-216|  },
-217|  {
-218|    id: SLIDE_IDS.SCHEMAVIZ,
-219|    name: 'SchemaViz',
-220|    title: 'SchemaViz',
-221|    preview: algoVisualizerPreview, // Reuse preview for now
-222|    position: { x: -300, y: 4800, z: 200, rotateY: -10 },
-223|    description:
-224|      'JSON Schema 可视化工具：交互式树形图 + 类型高亮 + 节点详情',
-225|    descriptionEn:
-226|      'JSON Schema visualizer: interactive tree view, color-coded types, node details',
-227|    tech: ['React', 'Vite', 'JSON', 'Schema'],
-228|    links: [
-229|      { type: 'demo', url: 'https://watermelontip.github.io/schema-viz/', text: 'Live Demo' },
-230|      { type: 'code', url: 'https://github.com/watermelontip/schema-viz', text: 'Github', githubRepo: 'watermelontip/schema-viz' },
-231|    ],
-232|    layout: 'standard',
-233|  },
-234|  {
-235|    id: SLIDE_IDS.GRIDFORGE,
-236|    name: 'GridForge',
-237|    title: 'GridForge',
-238|    preview: algoVisualizerPreview, // Reuse preview for now
-239|    position: { x: -600, y: 5600, z: 200, rotateY: 15 },
-240|    description:
-241|      'CSS Grid 生成器：可视化编辑 + 实时预览 + 模板库 + 代码导出',
-242|    descriptionEn:
-243|      'CSS Grid generator: visual editing, real-time preview, template library, code export',
-244|    tech: ['React', 'Vite', 'CSS', 'Grid'],
-245|    links: [
-246|      { type: 'demo', url: 'https://watermelontip.github.io/grid-forge/', text: 'Live Demo' },
-247|      { type: 'code', url: 'https://github.com/watermelontip/grid-forge', text: 'Github', githubRepo: 'watermelontip/grid-forge' },
-248|    ],
-249|    layout: 'reverse',
-250|  },
-251|  {
-252|    id: SLIDE_IDS.JSONTOCSV,
-253|    name: 'JsonToCSV',
-254|    title: 'JsonToCSV',
-255|    preview: algoVisualizerPreview, // Reuse preview for now
-256|    position: { x: -900, y: 6400, z: 200, rotateY: -20 },
-257|    description:
-258|      'JSON 转 CSV 工具：实时转换 + 嵌套支持 + 自定义选项 + 下载导出',
-259|    descriptionEn:
-260|      'JSON to CSV converter: real-time conversion, nested support, custom options, download export',
-261|    tech: ['React', 'Vite', 'JSON', 'CSV'],
-262|    links: [
-263|      { type: 'demo', url: 'https://watermelontip.github.io/json-to-csv/', text: 'Live Demo' },
-264|      { type: 'code', url: 'https://github.com/watermelontip/json-to-csv', text: 'Github', githubRepo: 'watermelontip/json-to-csv' },
-265|    ],
-266|    layout: 'standard',
-267|  },
-268|  {
-269|    id: SLIDE_IDS.YAMLFORGE,
-270|    name: 'YamlForge',
-271|    title: 'YamlForge',
-272|    preview: algoVisualizerPreview, // Reuse preview for now
-273|    position: { x: -1200, y: 7200, z: 200, rotateY: 10 },
-274|    description:
-275|      'YAML ↔ JSON 双向转换工具：实时预览 + 语法高亮 + 格式化',
-276|    descriptionEn:
-277|      'YAML/JSON bidirectional converter: real-time preview, syntax highlighting, formatting',
-278|    tech: ['React', 'Vite', 'YAML', 'JSON'],
-279|    links: [
-280|      { type: 'demo', url: 'https://watermelontip.github.io/yaml-forge/', text: 'Live Demo' },
-281|      { type: 'code', url: 'https://github.com/watermelontip/yaml-forge', text: 'Github', githubRepo: 'watermelontip/yaml-forge' },
-282|    ],
-283|    layout: 'reverse',
-284|  },
-285|  {
-286|    id: SLIDE_IDS.BASE64FORGE,
-287|    name: 'Base64Forge',
-288|    title: 'Base64Forge',
-289|    preview: algoVisualizerPreview, // Reuse preview for now
-290|    position: { x: -1500, y: 8000, z: 200, rotateY: -15 },
-291|    description:
-292|      'Base64 编码/解码工具：文本/文件编码 + 图片预览 + 一键复制',
-293|    descriptionEn:
-294|      'Base64 encoder/decoder: text/file encoding, image preview, one-click copy',
-295|    tech: ['React', 'Vite', 'Base64', 'Tool'],
-296|    links: [
-297|      { type: 'demo', url: 'https://watermelontip.github.io/base64-forge/', text: 'Live Demo' },
-298|      { type: 'code', url: 'https://github.com/watermelontip/base64-forge', text: 'Github', githubRepo: 'watermelontip/base64-forge' },
-299|    ],
-300|    layout: 'standard',
-301|  },
-302|  {
-303|    id: SLIDE_IDS.URLFORGE,
-304|    name: 'UrlForge',
-305|    title: 'UrlForge',
-306|    preview: algoVisualizerPreview,
-307|    position: { x: -1800, y: 8800, z: 200, rotateY: 20 },
-308|    description: 'URL 编码/解码工具：双向转换 + URL 解析 + 查询参数解析',
-309|    descriptionEn: 'URL encoder/decoder: bidirectional conversion, URL parsing, query parameter parsing',
-310|    tech: ['React', 'Vite', 'URL', 'Tool'],
-311|    links: [
-312|      { type: 'demo', url: 'https://watermelontip.github.io/url-forge/', text: 'Live Demo' },
-313|      { type: 'code', url: 'https://github.com/watermelontip/url-forge', text: 'Github', githubRepo: 'watermelontip/url-forge' },
-314|    ],
-315|    layout: 'reverse',
-316|  },
-317|  {
-318|    id: SLIDE_IDS.COLORCONVERT,
-319|    name: 'ColorConvert',
-320|    title: 'ColorConvert',
-321|    preview: algoVisualizerPreview,
-322|    position: { x: -2100, y: 9600, z: 200, rotateY: -10 },
-323|    description: '颜色格式转换工具：HEX/RGB/HSL 互转 + 色彩调色板',
-324|    descriptionEn: 'Color format converter: HEX/RGB/HSL conversion + color palette',
-325|    tech: ['React', 'Vite', 'Color', 'Tool'],
-326|    links: [
-327|      { type: 'demo', url: 'https://watermelontip.github.io/color-convert/', text: 'Live Demo' },
-328|      { type: 'code', url: 'https://github.com/watermelontip/color-convert', text: 'Github', githubRepo: 'watermelontip/color-convert' },
-329|    ],
-330|    layout: 'standard',
-331|  },
-332|  {
-333|    id: SLIDE_IDS.TABLEFORGE,
-334|    name: 'TableForge',
-335|    title: 'TableForge',
-336|    preview: algoVisualizerPreview,
-337|    position: { x: -2400, y: 10400, z: 200, rotateY: 15 },
-338|    description: 'Markdown 表格生成器：可视化编辑 + 实时预览 + 对齐控制',
-339|    descriptionEn: 'Markdown table generator: visual editor, real-time preview, alignment control',
-340|    tech: ['React', 'Vite', 'Markdown', 'Table'],
-341|    links: [
-342|      { type: 'demo', url: 'https://watermelontip.github.io/table-forge/', text: 'Live Demo' },
-343|      { type: 'code', url: 'https://github.com/watermelontip/table-forge', text: 'Github', githubRepo: 'watermelontip/table-forge' },
-344|    ],
-345|    layout: 'reverse',
-346|  },
-347|  {
-348|    id: SLIDE_IDS.JSONDIFF,
-349|    name: 'JsonDiff',
-350|    title: 'JsonDiff',
-351|    preview: algoVisualizerPreview,
-352|    position: { x: -2700, y: 11200, z: 200, rotateY: -10 },
-353|    description: 'JSON 差异比较工具：可视化差异 + 新增/删除/修改标记',
-354|    descriptionEn: 'JSON diff comparison tool: visual diff with add/remove/change markers',
-355|    tech: ['React', 'Vite', 'JSON', 'Diff'],
-356|    links: [
-357|      { type: 'demo', url: 'https://watermelontip.github.io/json-diff/', text: 'Live Demo' },
-358|      { type: 'code', url: 'https://github.com/watermelontip/json-diff', text: 'Github', githubRepo: 'watermelontip/json-diff' },
-359|    ],
-360|    layout: 'standard',
-361|  },
-362|  {
-363|    id: SLIDE_IDS.MARKPREVIEW,
-364|    name: 'MarkPreview',
-365|    title: 'MarkPreview',
-366|    preview: algoVisualizerPreview,
-367|    position: { x: -3000, y: 12000, z: 200, rotateY: 20 },
-368|    description: 'Markdown 实时预览器：边写边看 + 分屏视图',
-369|    descriptionEn: 'Markdown real-time previewer: split-pane view with live rendering',
-370|    tech: ['React', 'Vite', 'Markdown', 'Preview'],
-371|    links: [
-372|      { type: 'demo', url: 'https://watermelontip.github.io/mark-preview/', text: 'Live Demo' },
-373|      { type: 'code', url: 'https://github.com/watermelontip/mark-preview', text: 'Github', githubRepo: 'watermelontip/mark-preview' },
-374|    ],
-375|    layout: 'reverse',
-376|  },
-377|  {
-378|    id: SLIDE_IDS.REGEXLAB,
-379|    name: 'RegexLab',
-380|    title: 'RegexLab',
-381|    preview: algoVisualizerPreview,
-382|    position: { x: -3300, y: 12800, z: 200, rotateY: -15 },
-383|    description: '正则表达式测试器：实时匹配 + 高亮显示 + 常用模式库',
-384|    descriptionEn: 'Regex tester: real-time matching, highlighting, common patterns',
-385|    tech: ['React', 'Vite', 'Regex', 'Tool'],
-386|    links: [
-387|      { type: 'demo', url: 'https://watermelontip.github.io/regex-lab/', text: 'Live Demo' },
-388|      { type: 'code', url: 'https://github.com/watermelontip/regex-lab', text: 'Github', githubRepo: 'watermelontip/regex-lab' },
-389|    ],
-390|    layout: 'standard',
-391|  },
-392|  {
-393|    id: SLIDE_IDS.JSONPRETTIFY,
-394|    name: 'JsonPrettify',
-395|    title: 'JsonPrettify',
-396|    preview: algoVisualizerPreview,
-397|    position: { x: -3600, y: 13600, z: 200, rotateY: 10 },
-398|    description: 'JSON 格式化/压缩工具：美化 + 压缩 + 验证 + 统计',
-399|    descriptionEn: 'JSON prettify/minify tool: beautify, minify, validate, stats',
-400|    tech: ['React', 'Vite', 'JSON', 'Tool'],
-401|    links: [
-402|      { type: 'demo', url: 'https://watermelontip.github.io/json-prettify/', text: 'Live Demo' },
-403|      { type: 'code', url: 'https://github.com/watermelontip/json-prettify', text: 'Github', githubRepo: 'watermelontip/json-prettify' },
-404|    ],
-405|    layout: 'reverse',
-406|  },
-407|  {
-408|    id: SLIDE_IDS.CHECKLIST,
-409|    name: 'CheckList',
-410|    title: 'CheckList',
-411|    preview: algoVisualizerPreview,
-412|    position: { x: -3900, y: 14400, z: 200, rotateY: -20 },
-413|    description: 'Markdown 清单管理器：可视化任务管理 + 进度条 + 导出',
-414|    descriptionEn: 'Markdown checklist manager: visual task management, progress bar, export',
-415|    tech: ['React', 'Vite', 'Markdown', 'Todo'],
-416|    links: [
-417|      { type: 'demo', url: 'https://watermelontip.github.io/check-list/', text: 'Live Demo' },
-418|      { type: 'code', url: 'https://github.com/watermelontip/check-list', text: 'Github', githubRepo: 'watermelontip/check-list' },
-419|    ],
-420|    layout: 'standard',
-421|  },
-422|  {
-423|    id: SLIDE_IDS.EMOJIPICKER,
-424|    name: 'EmojiPicker',
-425|    title: 'EmojiPicker',
-426|    preview: algoVisualizerPreview,
-427|    position: { x: -4200, y: 15200, z: 200, rotateY: 10 },
-428|    description: 'Emoji 选择器：搜索 + 分类浏览 + 一键复制',
-429|    descriptionEn: 'Emoji picker: search, category browsing, one-click copy',
-430|    tech: ['React', 'Vite', 'Emoji', 'Tool'],
-431|    links: [
-432|      { type: 'demo', url: 'https://watermelontip.github.io/emoji-picker/', text: 'Live Demo' },
-433|      { type: 'code', url: 'https://github.com/watermelontip/emoji-picker', text: 'Github', githubRepo: 'watermelontip/emoji-picker' },
-434|    ],
-435|    layout: 'reverse',
-436|  },
-437|  {
-438|    id: SLIDE_IDS.QUOTEGEN,
-439|    name: 'QuoteGen',
-440|    title: 'QuoteGen',
-441|    preview: algoVisualizerPreview,
-442|    position: { x: -4500, y: 16000, z: 200, rotateY: -15 },
-443|    description: '引言图片生成器：8 种主题 + 下载图片 + 复制文字',
-444|    descriptionEn: 'Quote image generator: 8 themes, download, copy text',
-445|    tech: ['React', 'Vite', 'Canvas', 'Tool'],
-446|    links: [
-447|      { type: 'demo', url: 'https://watermelontip.github.io/quote-gen/', text: 'Live Demo' },
-448|      { type: 'code', url: 'https://github.com/watermelontip/quote-gen', text: 'Github', githubRepo: 'watermelontip/quote-gen' },
-449|    ],
-450|    layout: 'standard',
-451|  },
-452|  {
-453|    id: SLIDE_IDS.LINKEXTRACT,
-454|    name: 'LinkExtract',
-455|    title: 'LinkExtract',
-456|    preview: algoVisualizerPreview,
-457|    position: { x: -4800, y: 16800, z: 200, rotateY: 20 },
-458|    description: '链接提取器：从文本提取 URL/邮箱/Markdown 链接',
-459|    descriptionEn: 'Link extractor: extract URLs, emails, Markdown links from text',
-460|    tech: ['React', 'Vite', 'Parser', 'Tool'],
-461|    links: [
-462|      { type: 'demo', url: 'https://watermelontip.github.io/link-extract/', text: 'Live Demo' },
-463|      { type: 'code', url: 'https://github.com/watermelontip/link-extract', text: 'Github', githubRepo: 'watermelontip/link-extract' },
-464|    ],
-465|    layout: 'reverse',
-466|  },
-467|  {
-468|    id: SLIDE_IDS.WORDCOUNTER,
-469|    name: 'WordCounter',
-470|    title: 'WordCounter',
-471|    preview: algoVisualizerPreview,
-472|    position: { x: -5100, y: 17600, z: 200, rotateY: -10 },
-473|    description: '字数统计器：中英文统计 + 阅读时间 + 朗读时间',
-474|    descriptionEn: 'Word counter: Chinese/English stats, reading time, speaking time',
-475|    tech: ['React', 'Vite', 'Analytics', 'Tool'],
-476|    links: [
-477|      { type: 'demo', url: 'https://watermelontip.github.io/word-counter/', text: 'Live Demo' },
-478|      { type: 'code', url: 'https://github.com/watermelontip/word-counter', text: 'Github', githubRepo: 'watermelontip/word-counter' },
-479|    ],
-480|    layout: 'standard',
-481|  },
-482|  {
-483|    id: SLIDE_IDS.IMAGEGALLERY,
-484|    name: 'ImageGallery',
-485|    title: 'ImageGallery',
-486|    preview: algoVisualizerPreview,
-487|    position: { x: -5400, y: 18400, z: 200, rotateY: 15 },
-488|    description: '图片画廊：瀑布流布局 + 灯箱预览',
-489|    descriptionEn: 'Image gallery: waterfall layout, lightbox preview',
-490|    tech: ['React', 'Vite', 'Gallery', 'Tool'],
-491|    links: [
-492|      { type: 'demo', url: 'https://watermelontip.github.io/image-gallery/', text: 'Live Demo' },
-493|      { type: 'code', url: 'https://github.com/watermelontip/image-gallery', text: 'Github', githubRepo: 'watermelontip/image-gallery' },
-494|    ],
-495|    layout: 'reverse',
-496|  },
-497|  {
-498|    id: SLIDE_IDS.CODEHIGHLIGHT,
-499|    name: 'CodeHighlight',
-500|    title: 'CodeHighlight',
-501|    preview: algoVisualizerPreview,
-502|    position: { x: -5700, y: 19200, z: 200, rotateY: -20 },
-503|    description: '代码高亮工具：7 种语言 + Prism.js + 实时预览',
-504|    descriptionEn: 'Code highlight: 7 languages, Prism.js, real-time preview',
-505|    tech: ['React', 'Vite', 'Prism', 'Tool'],
-506|    links: [
-507|      { type: 'demo', url: 'https://watermelontip.github.io/code-highlight/', text: 'Live Demo' },
-508|      { type: 'code', url: 'https://github.com/watermelontip/code-highlight', text: 'Github', githubRepo: 'watermelontip/code-highlight' },
-509|    ],
-510|    layout: 'standard',
-511|  },
-512|  {
-513|    id: SLIDE_IDS.TASKBOARD,
-514|    name: 'TaskBoard',
-515|    title: 'TaskBoard',
-516|    preview: algoVisualizerPreview,
-517|    position: { x: -6000, y: 20000, z: 200, rotateY: 10 },
-518|    description: '看板任务板：拖拽式任务管理 + 优先级 + 状态流转',
-519|    descriptionEn: 'Kanban task board: drag-drop, priority, status flow',
-520|    tech: ['React', 'Vite', 'Kanban', 'Tool'],
-521|    links: [
-522|      { type: 'demo', url: 'https://watermelontip.github.io/task-board/', text: 'Live Demo' },
-523|      { type: 'code', url: 'https://github.com/watermelontip/task-board', text: 'Github', githubRepo: 'watermelontip/task-board' },
-524|    ],
-525|    layout: 'reverse',
-526|  },
-527|  {
-528|    id: SLIDE_IDS.PASSWORDGEN,
-529|    name: 'PasswordGen',
-530|    title: 'PasswordGen',
-531|    preview: algoVisualizerPreview,
-532|    position: { x: -6300, y: 20800, z: 200, rotateY: -15 },
-533|    description: '密码生成器：安全随机密码 + 强度检测 + 历史记录',
-534|    descriptionEn: 'Password generator: secure random, strength detection, history',
-535|    tech: ['React', 'Vite', 'Security', 'Tool'],
-536|    links: [
-537|      { type: 'demo', url: 'https://watermelontip.github.io/password-gen/', text: 'Live Demo' },
-538|      { type: 'code', url: 'https://github.com/watermelontip/password-gen', text: 'Github', githubRepo: 'watermelontip/password-gen' },
-539|    ],
-540|    layout: 'standard',
-541|  },
-542|  {
-543|    id: SLIDE_IDS.UUIDGEN,
-544|    name: 'UuidGen',
-545|    title: 'UuidGen',
-546|    preview: algoVisualizerPreview,
-547|    position: { x: -6600, y: 21600, z: 200, rotateY: 20 },
-548|    description: 'UUID 生成器：批量生成 UUID/NanoID/ULID',
-549|    descriptionEn: 'UUID generator: batch generate UUID, NanoID, ULID',
-550|    tech: ['React', 'Vite', 'UUID', 'Tool'],
-551|    links: [
-552|      { type: 'demo', url: 'https://watermelontip.github.io/uuid-gen/', text: 'Live Demo' },
-553|      { type: 'code', url: 'https://github.com/watermelontip/uuid-gen', text: 'Github', githubRepo: 'watermelontip/uuid-gen' },
-554|    ],
-555|    layout: 'reverse',
-556|  },
-557|  {
-558|    id: SLIDE_IDS.TIMESTAMPCONVERT,
-559|    name: 'TimestampConvert',
-560|    title: 'TimestampConvert',
-561|    preview: algoVisualizerPreview,
-562|    position: { x: -6900, y: 22400, z: 200, rotateY: -10 },
-563|    description: '时间戳转换器：Unix 时间戳与日期互转 + 实时时钟',
-564|    descriptionEn: 'Timestamp converter: Unix timestamp ↔ date, real-time clock',
-565|    tech: ['React', 'Vite', 'Timestamp', 'Tool'],
-566|    links: [
-567|      { type: 'demo', url: 'https://watermelontip.github.io/timestamp-convert/', text: 'Live Demo' },
-568|      { type: 'code', url: 'https://github.com/watermelontip/timestamp-convert', text: 'Github', githubRepo: 'watermelontip/timestamp-convert' },
-569|    ],
-570|    layout: 'standard',
-571|  },
-572|  {
-573|    id: SLIDE_IDS.IPLOOKUP,
-574|    name: 'IpLookup',
-575|    title: 'IpLookup',
-576|    preview: algoVisualizerPreview,
-577|    position: { x: -7200, y: 23200, z: 200, rotateY: 15 },
-578|    description: 'IP 查询工具：地理位置 + 网络信息 + 地图链接',
-579|    descriptionEn: 'IP lookup: geolocation, network info, map link',
-580|    tech: ['React', 'Vite', 'API', 'Tool'],
-581|    links: [
-582|      { type: 'demo', url: 'https://watermelontip.github.io/ip-lookup/', text: 'Live Demo' },
-583|      { type: 'code', url: 'https://github.com/watermelontip/ip-lookup', text: 'Github', githubRepo: 'watermelontip/ip-lookup' },
-584|    ],
-585|    layout: 'reverse',
-586|  },
-587|  {
-588|    id: SLIDE_IDS.LOREMGEN,
-589|    name: 'LoremGen',
-590|    title: 'LoremGen',
-591|    preview: algoVisualizerPreview,
-592|    position: { x: -7500, y: 24000, z: 200, rotateY: -20 },
-593|    description: 'Lorem Ipsum 占位文本生成器：Latin + 中文',
-594|    descriptionEn: 'Lorem ipsum generator: Latin + Chinese',
-595|    tech: ['React', 'Vite', 'Text', 'Tool'],
-596|    links: [
-597|      { type: 'demo', url: 'https://watermelontip.github.io/lorem-gen/', text: 'Live Demo' },
-598|      { type: 'code', url: 'https://github.com/watermelontip/lorem-gen', text: 'Github', githubRepo: 'watermelontip/lorem-gen' },
-599|    ],
-600|    layout: 'standard',
-601|  },
-602|  {
-603|    id: SLIDE_IDS.MARKDOWNCHEAT,
-604|    name: 'MarkdownCheat',
-605|    title: 'MarkdownCheat',
-606|    preview: algoVisualizerPreview,
-607|    position: { x: -7800, y: 24800, z: 200, rotateY: 10 },
-608|    description: 'Markdown 速查表：常用语法参考 + 点击复制',
-609|    descriptionEn: 'Markdown cheatsheet: syntax reference, click-to-copy',
-610|    tech: ['React', 'Vite', 'Markdown', 'Tool'],
-611|    links: [
-612|      { type: 'demo', url: 'https://watermelontip.github.io/markdown-cheat/', text: 'Live Demo' },
-613|      { type: 'code', url: 'https://github.com/watermelontip/markdown-cheat', text: 'Github', githubRepo: 'watermelontip/markdown-cheat' },
-614|    ],
-615|    layout: 'reverse',
-616|  },
-617|  {
-618|    id: SLIDE_IDS.CSSUNITS,
-619|    name: 'CssUnits',
-620|    title: 'CssUnits',
-621|    preview: algoVisualizerPreview,
-622|    position: { x: -8100, y: 25600, z: 200, rotateY: -15 },
-623|    description: 'CSS 单位转换器：px/em/rem/%/vw/vh 互转',
-624|    descriptionEn: 'CSS unit converter: px/em/rem/%/vw/vh conversion',
-625|    tech: ['React', 'Vite', 'CSS', 'Tool'],
-626|    links: [
-627|      { type: 'demo', url: 'https://watermelontip.github.io/css-units/', text: 'Live Demo' },
-628|      { type: 'code', url: 'https://github.com/watermelontip/css-units', text: 'Github', githubRepo: 'watermelontip/css-units' },
-629|    ],
-630|    layout: 'standard',
-631|  },
-632|  {
-633|    id: SLIDE_IDS.HTMLENCODE,
-634|    name: 'HtmlEncode',
-635|    title: 'HtmlEncode',
-636|    preview: algoVisualizerPreview,
-637|    position: { x: -8400, y: 26400, z: 200, rotateY: 20 },
-638|    description: 'HTML 实体编码器：编码/解码 + 常用实体参考',
-639|    descriptionEn: 'HTML entity encoder: encode/decode, common entities reference',
-640|    tech: ['React', 'Vite', 'HTML', 'Tool'],
-641|    links: [
-642|      { type: 'demo', url: 'https://watermelontip.github.io/html-encode/', text: 'Live Demo' },
-643|      { type: 'code', url: 'https://github.com/watermelontip/html-encode', text: 'Github', githubRepo: 'watermelontip/html-encode' },
-644|    ],
-645|    layout: 'reverse',
-646|  },
-647|  {
-648|    id: SLIDE_IDS.BASECONVERT,
-649|    name: 'BaseConvert',
-650|    title: 'BaseConvert',
-651|    preview: algoVisualizerPreview,
-652|    position: { x: -8700, y: 27200, z: 200, rotateY: -10 },
-653|    description: '进制转换器：二进制/八进制/十进制/十六进制互转',
-654|    descriptionEn: 'Number base converter: binary/octal/decimal/hex',
-655|    tech: ['React', 'Vite', 'Math', 'Tool'],
-656|    links: [
-657|      { type: 'demo', url: 'https://watermelontip.github.io/base-convert/', text: 'Live Demo' },
-658|      { type: 'code', url: 'https://github.com/watermelontip/base-convert', text: 'Github', githubRepo: 'watermelontip/base-convert' },
-659|    ],
-660|    layout: 'standard',
-661|  },
-662|  {
-663|    id: SLIDE_IDS.TEXTDIFF,
-664|    name: 'TextDiff',
-665|    title: 'TextDiff',
-666|    preview: algoVisualizerPreview,
-667|    position: { x: -9000, y: 28000, z: 200, rotateY: 15 },
-668|    description: '文本对比工具：逐行差异 + LCS 算法 + 可视化增删改',
-669|    descriptionEn: 'Text comparison: line diff, LCS algorithm, visual markers',
-670|    tech: ['React', 'Vite', 'Diff', 'Tool'],
-671|    links: [
-672|      { type: 'demo', url: 'https://watermelontip.github.io/text-diff/', text: 'Live Demo' },
-673|      { type: 'code', url: 'https://github.com/watermelontip/text-diff', text: 'Github', githubRepo: 'watermelontip/text-diff' },
-674|    ],
-675|    layout: 'reverse',
-676|  },
-677|  {
-678|    id: SLIDE_IDS.PALETTEGEN,
-679|    name: 'PaletteGen',
-680|    title: 'PaletteGen',
-681|    preview: algoVisualizerPreview,
-682|    position: { x: -9300, y: 28800, z: 200, rotateY: -20 },
-683|    description: '调色板生成器：6 种色彩和谐 + 明度渐变',
-684|    descriptionEn: 'Color palette generator: 6 harmonies, tint gradients',
-685|    tech: ['React', 'Vite', 'Color', 'Tool'],
-686|    links: [
-687|      { type: 'demo', url: 'https://watermelontip.github.io/palette-gen/', text: 'Live Demo' },
-688|      { type: 'code', url: 'https://github.com/watermelontip/palette-gen', text: 'Github', githubRepo: 'watermelontip/palette-gen' },
-689|    ],
-690|    layout: 'standard',
-691|  },
-692|  {
-693|    id: SLIDE_IDS.CSVTOTABLE,
-694|    name: 'CsvToTable',
-695|    title: 'CsvToTable',
-696|    preview: algoVisualizerPreview,
-697|    position: { x: -9600, y: 29600, z: 200, rotateY: 10 },
-698|    description: 'CSV 转表格工具：CSV 转 Markdown/HTML 表格',
-699|    descriptionEn: 'CSV to table converter: CSV to Markdown/HTML tables',
-700|    tech: ['React', 'Vite', 'CSV', 'Tool'],
-701|    links: [
-702|      { type: 'demo', url: 'https://watermelontip.github.io/csv-to-table/', text: 'Live Demo' },
-703|      { type: 'code', url: 'https://github.com/watermelontip/csv-to-table', text: 'Github', githubRepo: 'watermelontip/csv-to-table' },
-704|    ],
-705|    layout: 'reverse',
-706|  },
-707|  {
-708|    id: SLIDE_IDS.LINECOUNTER,
-709|    name: 'LineCounter',
-710|    title: 'LineCounter',
-711|    preview: algoVisualizerPreview,
-712|    position: { x: -9900, y: 30400, z: 200, rotateY: -15 },
-713|    description: '行数统计器：按文件类型统计代码/注释/空白行数',
-714|    descriptionEn: 'Line counter: code/comment/blank lines by file type',
-715|    tech: ['React', 'Vite', 'Analytics', 'Tool'],
-716|    links: [
-717|      { type: 'demo', url: 'https://watermelontip.github.io/line-counter/', text: 'Live Demo' },
-718|      { type: 'code', url: 'https://github.com/watermelontip/line-counter', text: 'Github', githubRepo: 'watermelontip/line-counter' },
-719|    ],
-720|    layout: 'standard',
-721|  },
-722|  {
-723|    id: SLIDE_IDS.PLACEHOLDERIMG,
-724|    name: 'PlaceholderImg',
-725|    title: 'PlaceholderImg',
-726|    preview: algoVisualizerPreview,
-727|    position: { x: -10200, y: 31200, z: 200, rotateY: 20 },
-728|    description: '占位图生成器：自定义尺寸/颜色/文字 + Canvas 生成',
-729|    descriptionEn: 'Placeholder image generator: custom size, color, text, Canvas',
-730|    tech: ['React', 'Vite', 'Canvas', 'Tool'],
-731|    links: [
-732|      { type: 'demo', url: 'https://watermelontip.github.io/placeholder-img/', text: 'Live Demo' },
-733|      { type: 'code', url: 'https://github.com/watermelontip/placeholder-img', text: 'Github', githubRepo: 'watermelontip/placeholder-img' },
-734|    ],
-735|    layout: 'reverse',
-736|  },
-737|  {
-738|    id: SLIDE_IDS.MARKEDITOR,
-739|    name: 'MarkEditor',
-740|    title: 'MarkEditor',
-741|    preview: algoVisualizerPreview,
-742|    position: { x: -10500, y: 32000, z: 200, rotateY: -10 },
-743|    description: 'Markdown 编辑器：实时预览 + 工具栏 + 字数统计',
-744|    descriptionEn: 'Markdown editor: live preview, toolbar, word count',
-745|    tech: ['React', 'Vite', 'Markdown', 'Tool'],
-746|    links: [
-747|      { type: 'demo', url: 'https://watermelontip.github.io/mark-editor/', text: 'Live Demo' },
-748|      { type: 'code', url: 'https://github.com/watermelontip/mark-editor', text: 'Github', githubRepo: 'watermelontip/mark-editor' },
-749|    ],
-750|    layout: 'standard',
-751|  },
-752|  {
-753|    id: SLIDE_IDS.CASECONVERT,
-754|    name: 'CaseConvert',
-755|    title: 'CaseConvert',
-756|    preview: algoVisualizerPreview,
-757|    position: { x: -10800, y: 32800, z: 200, rotateY: 15 },
-758|    description: '大小写转换器：10 种格式互转',
-759|    descriptionEn: 'Text case converter: 10 formats',
-760|    tech: ['React', 'Vite', 'Text', 'Tool'],
-761|    links: [
-762|      { type: 'demo', url: 'https://watermelontip.github.io/case-convert/', text: 'Live Demo' },
-763|      { type: 'code', url: 'https://github.com/watermelontip/case-convert', text: 'Github', githubRepo: 'watermelontip/case-convert' },
-764|    ],
-765|    layout: 'reverse',
-766|  },
-767|  {
-768|    id: SLIDE_IDS.TEXTREVERSE,
-769|    name: 'TextReverse',
-770|    title: 'TextReverse',
-771|    preview: algoVisualizerPreview,
-772|    position: { x: -11100, y: 33600, z: 200, rotateY: -20 },
-773|    description: '文本反转器：6 种反转方式 + 镜像文字',
-774|    descriptionEn: 'Text reversal: 6 modes, mirror text',
-775|    tech: ['React', 'Vite', 'Text', 'Tool'],
-776|    links: [
-777|      { type: 'demo', url: 'https://watermelontip.github.io/text-reverse/', text: 'Live Demo' },
-778|      { type: 'code', url: 'https://github.com/watermelontip/text-reverse', text: 'Github', githubRepo: 'watermelontip/text-reverse' },
-779|    ],
-780|    layout: 'standard',
-781|  },
-782|  {
-783|    id: SLIDE_IDS.TEXTSTATS,
-784|    name: 'TextStats',
-785|    title: 'TextStats',
-786|    preview: algoVisualizerPreview,
-787|    position: { x: -11400, y: 34400, z: 200, rotateY: 10 },
-788|    description: '文本统计器：详细分析 + 高频词汇 + 阅读时间',
-789|    descriptionEn: 'Text stats: detailed analysis, word frequency, reading time',
-790|    tech: ['React', 'Vite', 'Analytics', 'Tool'],
-791|    links: [
-792|      { type: 'demo', url: 'https://watermelontip.github.io/text-stats/', text: 'Live Demo' },
-793|      { type: 'code', url: 'https://github.com/watermelontip/text-stats', text: 'Github', githubRepo: 'watermelontip/text-stats' },
-794|    ],
-795|    layout: 'reverse',
-796|  },
-797|  {
-798|    id: SLIDE_IDS.TEXTCOMPARE,
-799|    name: 'TextCompare',
-800|    title: 'TextCompare',
-801|    preview: algoVisualizerPreview,
-802|    position: { x: -11700, y: 35200, z: 200, rotateY: -15 },
-803|    description: '文本对比工具：并排差异 + LCS 算法',
-804|    descriptionEn: 'Text comparison: side-by-side diff, LCS algorithm',
-805|    tech: ['React', 'Vite', 'Diff', 'Tool'],
-806|    links: [
-807|      { type: 'demo', url: 'https://watermelontip.github.io/text-compare/', text: 'Live Demo' },
-808|      { type: 'code', url: 'https://github.com/watermelontip/text-compare', text: 'Github', githubRepo: 'watermelontip/text-compare' },
-809|    ],
-810|    layout: 'standard',
-811|  },
-812|  {
-813|    id: SLIDE_IDS.TABLEGENERATOR,
-814|    name: 'TableGenerator',
-815|    title: 'TableGenerator',
-816|    preview: algoVisualizerPreview,
-817|    position: { x: -12000, y: 36000, z: 200, rotateY: 10 },
-818|    description: 'Markdown 表格生成器：可视化编辑 + 对齐控制',
-819|    descriptionEn: 'Markdown table generator: visual editor, alignment control',
-820|    tech: ['React', 'Vite', 'Markdown', 'Tool'],
-821|    links: [
-822|      { type: 'demo', url: 'https://watermelontip.github.io/table-generator/', text: 'Live Demo' },
-823|      { type: 'code', url: 'https://github.com/watermelontip/table-generator', text: 'Github', githubRepo: 'watermelontip/table-generator' },
-824|    ],
-825|    layout: 'reverse',
-826|  },
-827|  {
-828|    id: SLIDE_IDS.MARKDOWNTABLE,
-829|    name: 'MarkdownTable',
-830|    title: 'MarkdownTable',
-831|    preview: algoVisualizerPreview,
-832|    position: { x: -12300, y: 36800, z: 200, rotateY: -20 },
-833|    description: 'Markdown 表格生成器：可视化编辑 + 对齐控制',
-834|    descriptionEn: 'Markdown table generator: visual editor, alignment control',
-835|    tech: ['React', 'Vite', 'Markdown', 'Tool'],
-836|    links: [
-837|      { type: 'demo', url: 'https://watermelontip.github.io/markdown-table/', text: 'Live Demo' },
-838|      { type: 'code', url: 'https://github.com/watermelontip/markdown-table', text: 'Github', githubRepo: 'watermelontip/markdown-table' },
-839|    ],
-840|    layout: 'standard',
-841|  },
-842|  {
-843|    id: SLIDE_IDS.MARKDOWNTABLEGEN,
-844|    name: 'MarkdownTableGen',
-845|    title: 'MarkdownTableGen',
-846|    preview: algoVisualizerPreview,
-847|    position: { x: -12600, y: 37600, z: 200, rotateY: 10 },
-848|    description: 'Markdown 表格生成器：可视化编辑 + 对齐控制',
-849|    descriptionEn: 'Markdown table generator: visual editor, alignment control',
-850|    tech: ['React', 'Vite', 'Markdown', 'Tool'],
-851|    links: [
-852|      { type: 'demo', url: 'https://watermelontip.github.io/markdown-table-gen/', text: 'Live Demo' },
-853|      { type: 'code', url: 'https://github.com/watermelontip/markdown-table-gen', text: 'Github', githubRepo: 'watermelontip/markdown-table-gen' },
-854|    ],
-855|    layout: 'reverse',
-856|  },
-857|  {
-858|    id: SLIDE_IDS.QRCODEGEN,
-859|    name: 'MarkdownTableGenV2',
-860|    title: 'MarkdownTableGenV2',
-861|    preview: algoVisualizerPreview,
-862|    position: { x: -12900, y: 38400, z: 200, rotateY: -20 },
-863|    description: 'Markdown 表格生成器 V2：可视化编辑 + 对齐控制',
-864|    descriptionEn: 'Markdown table generator v2: visual editor, alignment control',
-865|    tech: ['React', 'Vite', 'Markdown', 'Tool'],
-866|    links: [
-867|      { type: 'demo', url: 'https://watermelontip.github.io/markdown-table-gen-v2/', text: 'Live Demo' },
-868|      { type: 'code', url: 'https://github.com/watermelontip/markdown-table-gen-v2', text: 'Github', githubRepo: 'watermelontip/markdown-table-gen-v2' },
-869|    ],
-870|    layout: 'standard',
-871|  },
-872|  {
+1|1|import netToolboxPreview from '../assets/net-toolbox.mp4';
+2|2|import kawaiiThemePreview from '../assets/kawaii-theme.mp4';
+3|3|import toolsPortalPreview from '../assets/tools-portal.mp4';
+4|4|import codeFlowchartPreview from '../assets/code-flowchart.mp4';
+5|5|import particleLabPreview from '../assets/particle-lab.mp4';
+6|6|import roughChartPreview from '../assets/rough-chart.mp4';
+7|7|import towerGamePreview from '../assets/tower-game.mp4';
+8|8|import algoVisualizerPreview from '../assets/algo-visualizer.mp4';
+9|9|import { Project } from '../types/project';
+10|10|import { SLIDE_IDS } from './slideIds';
+11|11|
+12|12|export const projectsData: Project[] = [
+13|13|  {
+14|14|    id: SLIDE_IDS.ALGO_VISUALIZER,
+15|15|    name: 'Algo Visualizer',
+16|16|    title: 'Algo Visualizer',
+17|17|    preview: algoVisualizerPreview,
+18|18|    position: { x: 1500, y: 0, z: 0, rotateY: 0 },
+19|19|    description:
+20|20|      '交互式算法可视化工具：支持排序算法和路径查找算法的动态演示与教学',
+21|21|    descriptionEn:
+22|22|      'Interactive algorithm visualization tool with sorting and pathfinding animations',
+23|23|    tech: ['Algorithm', 'Canvas', 'Visualization', 'Education'],
+24|24|    links: [
+25|25|      { type: 'demo', url: 'https://watermelontip.github.io/algo-visualizer/', text: 'Live Demo' },
+26|26|      { type: 'code', url: 'https://github.com/watermelontip/algo-visualizer', text: 'Github', githubRepo: 'watermelontip/algo-visualizer' },
+27|27|    ],
+28|28|    layout: 'standard',
+29|29|  },
+30|30|  {
+31|31|    id: SLIDE_IDS.CODE_FLOWCHART,
+32|32|    name: 'Code Flowchart',
+33|33|    title: 'Code Flowchart',
+34|34|    preview: codeFlowchartPreview,
+35|35|    position: { x: 1200, y: 800, z: 200, rotateY: 30 },
+36|36|    description:
+37|37|      '代码转流程图工具：将代码自动解析并生成可视化的 SVG 流程图',
+38|38|    descriptionEn:
+39|39|      'Convert code into visual SVG flowcharts automatically',
+40|40|    tech: ['Parser', 'SVG', 'Code', 'Tool'],
+41|41|    links: [
+42|42|      { type: 'demo', url: 'https://watermelontip.github.io/code-flowchart/', text: 'Live Demo' },
+43|43|      { type: 'code', url: 'https://github.com/watermelontip/code-flowchart', text: 'Github', githubRepo: 'watermelontip/code-flowchart' },
+44|44|    ],
+45|45|    layout: 'reverse',
+46|46|  },
+47|47|  {
+48|48|    id: SLIDE_IDS.PARTICLE_LAB,
+49|49|    name: 'Particle Lab',
+50|50|    title: 'Particle Lab',
+51|51|    preview: particleLabPreview,
+52|52|    position: { x: 0, y: 1500, z: 400, rotateY: 90 },
+53|53|    description:
+54|54|      '交互式粒子特效生成器：自由调节参数，实时预览各种酷炫粒子动画效果',
+55|55|    descriptionEn:
+56|56|      'Interactive particle effect generator with real-time parameter tuning',
+57|57|    tech: ['Canvas', 'Animation', 'Particle', 'Creative'],
+58|58|    links: [
+59|59|      { type: 'demo', url: 'https://watermelontip.github.io/particle-lab/', text: 'Live Demo' },
+60|60|      { type: 'code', url: 'https://github.com/watermelontip/particle-lab', text: 'Github', githubRepo: 'watermelontip/particle-lab' },
+61|61|    ],
+62|62|    layout: 'standard',
+63|63|  },
+64|64|  {
+65|65|    id: SLIDE_IDS.ROUGH_CHART,
+66|66|    name: 'Rough Chart',
+67|67|    title: 'Rough Chart',
+68|68|    preview: roughChartPreview,
+69|69|    position: { x: -1060, y: 1060, z: 600, rotateY: 135 },
+70|70|    description:
+71|71|      '手绘风格图表生成器：基于 RoughViz，生成具有手绘质感的数据可视化图表',
+72|72|    descriptionEn:
+73|73|      'Hand-drawn style chart generator based on RoughViz',
+74|74|    tech: ['Chart', 'RoughViz', 'SVG', 'Data Viz'],
+75|75|    links: [
+76|76|      { type: 'demo', url: 'https://watermelontip.github.io/rough-chart/', text: 'Live Demo' },
+77|77|      { type: 'code', url: 'https://github.com/watermelontip/rough-chart', text: 'Github', githubRepo: 'watermelontip/rough-chart' },
+78|78|    ],
+79|79|    layout: 'reverse',
+80|80|  },
+81|81|  {
+82|82|    id: SLIDE_IDS.TOWER_GAME,
+83|83|    name: 'Tower Game',
+84|84|    title: 'Tower Game',
+85|85|    preview: towerGamePreview,
+86|86|    position: { x: -1500, y: 0, z: 800, rotateY: 180 },
+87|87|    description:
+88|88|      '堆塔小游戏：经典的堆叠方块游戏，考验你的反应和节奏感',
+89|89|    descriptionEn:
+90|90|      'Classic tower stacking game testing your timing and rhythm',
+91|91|    tech: ['Game', 'Canvas', 'Animation', 'Casual'],
+92|92|    links: [
+93|93|      { type: 'demo', url: 'https://watermelontip.github.io/tower-game/', text: 'Live Demo' },
+94|94|      { type: 'code', url: 'https://github.com/watermelontip/tower-game', text: 'Github', githubRepo: 'watermelontip/tower-game' },
+95|95|    ],
+96|96|    layout: 'standard',
+97|97|  },
+98|98|  {
+99|99|    id: SLIDE_IDS.NET_TOOLBOX,
+100|100|    name: 'Net Toolbox',
+101|101|    title: 'Net Toolbox',
+102|102|    preview: netToolboxPreview,
+103|103|    position: { x: -1060, y: -1060, z: 1000, rotateY: 225 },
+104|104|    description:
+105|105|      '综合网络工具箱：IP 查询、延迟测试、DNS 查询、Whois、SSL 检测等 8 大功能',
+106|106|    descriptionEn:
+107|107|      'Comprehensive network toolbox: IP lookup, latency test, DNS, Whois, SSL detection and more',
+108|108|    tech: ['Network', 'Vue', 'API', 'Tool'],
+109|109|    links: [
+110|110|      { type: 'demo', url: 'https://watermelontip.github.io/net-toolbox/', text: 'Live Demo' },
+111|111|      { type: 'code', url: 'https://github.com/watermelontip/net-toolbox', text: 'Github', githubRepo: 'watermelontip/net-toolbox' },
+112|112|    ],
+113|113|    layout: 'reverse',
+114|114|  },
+115|115|  {
+116|116|    id: SLIDE_IDS.KAWAII_THEME,
+117|117|    name: 'Kawaii AI Theme Engine',
+118|118|    title: 'Kawaii AI Theme Engine',
+119|119|    preview: kawaiiThemePreview,
+120|120|    position: { x: 0, y: -1500, z: 1200, rotateY: 270 },
+121|121|    description:
+122|122|      '基于随机化的 AI 卡哇伊风格主题生成引擎，每次生成独一无二的可爱主题',
+123|123|    descriptionEn:
+124|124|      'Randomization-based AI kawaii-style theme generation engine',
+125|125|    tech: ['AI', 'CSS', 'Theme', 'Generator'],
+126|126|    links: [
+127|127|      { type: 'demo', url: 'https://watermelontip.github.io/Kawaii-AI-Theme-Engine/', text: 'Live Demo' },
+128|128|      { type: 'code', url: 'https://github.com/watermelontip/Kawaii-AI-Theme-Engine', text: 'Github', githubRepo: 'watermelontip/Kawaii-AI-Theme-Engine' },
+129|129|    ],
+130|130|    layout: 'standard',
+131|131|  },
+132|132|  {
+133|133|    id: SLIDE_IDS.TOOLS_PORTAL,
+134|134|    name: 'Tools Portal',
+135|135|    title: 'Tools Portal',
+136|136|    preview: toolsPortalPreview,
+137|137|    position: { x: 1060, y: -1060, z: 1400, rotateY: 315 },
+138|138|    description:
+139|139|      '免费在线开发者工具箱：JSON 格式化、Base64、颜色转换、正则测试、QR 码、渐变生成等 21 个工具',
+140|140|    descriptionEn:
+141|141|      'Free online developer toolbox: JSON, Base64, color converter, regex, QR code, gradient generator and 21 tools',
+142|142|    tech: ['Vue', 'CDN', 'Tools', 'Static'],
+143|143|    links: [
+144|144|      { type: 'demo', url: 'https://watermelontip.github.io/tools-portal-cdn/', text: 'Live Demo' },
+145|145|      { type: 'code', url: 'https://github.com/watermelontip/tools-portal-cdn', text: 'Github', githubRepo: 'watermelontip/tools-portal-cdn' },
+146|146|    ],
+147|147|    layout: 'reverse',
+148|148|  },
+149|149|  {
